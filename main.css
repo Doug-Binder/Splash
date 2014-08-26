@@ -19,8 +19,10 @@ span:hover{
 	height:240px;
 	width:240px;
 	border-radius:50%;
+	bord/er:3px solid #FF6C26;
 	background-color: #FF6C26;
-	overf/low:hidden;
+	overflow:hidden;
+	transform: translate3d(0,0,0)
 }
 .scroll{
 	height:240px;
@@ -32,10 +34,13 @@ span:hover{
 	width:720px;
 	transform: translate3d(240px,0,0);
 	 will-change: transform;
-	 -webkit-transition: transform 2s;
+	 -webkit-transition: transform .8s ease-in-out;
 }
 .first{
-background-color:white;
+background-i/mage:url("./images/FirstPanel.png");
+background-size:contain;
+background-repeat: no-repeat;
+background-color: white;
 }
 .second{
 background-color:green;
