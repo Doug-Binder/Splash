@@ -1,18 +1,13 @@
 body{
 background-color:#020D0C;
-font-size:14pt;
-
+font-size:12pt;
+font-family: 'Open Sans', sans-serif;
+color:white;
+min-width:360px;
+min-height:500px;
 }
 ul{
 	color: #FF6c26;
-}
-span{
-	color:white;
-}
-span:hover{
-	box-sizing:border-box;
-	border-bottom: solid 1px #FF6c26;
-
 }
 .center-piece{
 	margin:60px auto;
@@ -51,8 +46,46 @@ background-color:green;
 .fourth{
 	background-color:yellow;
 }
-.text-wrapper{
+.about-wrapper{
+	display: table;
 	margin:0px auto;
-	width: 202px;
 	color: white;
 }
+.about-item{
+	border-top:1px solid rgba(255,255,255,.2);
+	border-left:1px solid rgba(255,255,255,.2);
+	border-right:1px solid rgba(255,255,255,.2);
+	padding:5px;
+	height:36px;
+	min-width:240px;
+}
+.about-item:last-of-type {
+	border-bottom:1px solid rgba(255,255,255,.2);
+}
+.about-icon{
+width:36px;
+height:36px;
+margin-right:5px;
+display:inline-block;
+background-color:white;
+}
+.about-body{
+	display:inline-block;
+	vertical-align:top;
+	line-height: 20px;
+	font-size:12pt;
+	height:20px;
+}
+.about-body-sub{
+	font-size:8pt;
+	vertical-align: top;
+	display:inline-block;
+	line-height:12px;
+	color:rgba(255,255,255,.5);
+}
+.Title{
+	text-align:center;
+	font-size:36pt;
+	margin:0px 0px 60px;
+}
+
