@@ -32,16 +32,33 @@ ul{
 	 -webkit-transition: transform .8s ease-in-out;
 }
 .first{
-background-i/mage:url("./images/FirstPanel.png");
+
+}
+.portrait{
+background-image:url("./images/FirstPanel.png");
 background-size:contain;
 background-repeat: no-repeat;
 background-color: white;
+height:301px;
+width:240px;
 }
 .second{
-background-color:green;
 }
 .third{
-	background-color:blue;
+
+background-size:contain;
+background-repeat: no-repeat;
+background-color: white;
+overflow:hidden;
+}
+.empire-state{
+	background-image:url("./images/icons/Empire-State.png");
+background-size:contain;
+background-repeat: no-repeat;
+height:225px;
+width:225px;
+display:table;
+margin: 15px auto;
 }
 .fourth{
 	background-color:yellow;
