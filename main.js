@@ -20,13 +20,13 @@ function ChangeState(e){
         	DisplayPortrait(e)
         }
         if (state == 1){
-        	DisplayOlaf(e)
+        	DisplayFirst(e)
         }
         if (state == 2){
-        	DisplayFull(e)
+        	DisplaySecond(e)
         }
         if (state == 3){
-        	DisplayNYC(e);
+        	DisplayThird(e);
         }
     }
 
@@ -40,17 +40,17 @@ function DisplayPortrait(){
     state=0;
 }
 
-function DisplayOlaf(ev){
+function DisplayFirst(ev){
 	wrapper.style.webkitTransform = "translate3d(0px, 0px, 0px)";
 	ev.stopPropagation();
     state=1;
 }
-function DisplayFull(ev){
+function DisplaySecond(ev){
 	wrapper.style.webkitTransform = "translate3d(-240px,0px, 0px)";
 	ev.stopPropagation();
     state=2;
 }
-function DisplayNYC(ev){
+function DisplayThird(ev){
 	wrapper.style.webkitTransform = "translate3d(-480px, 0px, 0px)";
 	ev.stopPropagation();
     state=3;
@@ -60,9 +60,9 @@ function DisplayNYC(ev){
 
 function init(){
 wrapper = document.getElementById("scroll-wrapper");
-document.getElementById('olaf-flag').addEventListener('click', DisplayOlaf, false);
-document.getElementById('full-flag').addEventListener('click', DisplayFull, false);
-document.getElementById('nyc-flag').addEventListener('click', DisplayNYC, false);
+document.getElementById('do-full-stack').addEventListener('click', DisplayFirst, false);
+document.getElementById('do-nyc').addEventListener('click', DisplaySecond, false);
+document.getElementById('do-job').addEventListener('click', DisplayThird, false);
 document.getElementsByTagName('body')[0].addEventListener('click',DisplayPortrait, false)
 document.onkeydown = ChangeState;
 }
