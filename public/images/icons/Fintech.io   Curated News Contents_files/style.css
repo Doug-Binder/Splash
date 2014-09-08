@@ -1,0 +1,4421 @@
+@charset "UTF-8";
+/* import vendor libraries */
+/* http://bourbon.io/docs/ */
+/* import app variables */
+/* App colors */
+/* Layout */
+/* comment to turn off grid */
+/* http://neat.bourbon.io/docs/ */
+@import url("//hello.myfonts.net/count/2b6121");
+/* line 2, ../sass/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* http://bitters.bourbon.io/ */
+/* line 1, ../sass/base/extends/_button.scss */
+button,
+input[type="submit"], .primary-action-button, .comment-form-submit, .verify-button, .accredit-button, .create-button, .auth-button, .investment-inquire-button,
+.investment-interest-button, .investment-follow-button, .investment-question-button, .save-profile-button, .primary-action-button:hover, .comment-form-submit:hover, .verify-button:hover, .accredit-button:hover, .create-button:hover, .auth-button:hover, .investment-inquire-button:hover,
+.investment-interest-button:hover, .investment-follow-button:hover, .investment-question-button:hover, .save-profile-button:hover, .primary-action-button:focus, .comment-form-submit:focus, .verify-button:focus, .accredit-button:focus, .create-button:focus, .auth-button:focus, .investment-inquire-button:focus,
+.investment-interest-button:focus, .investment-follow-button:focus, .investment-question-button:focus, .save-profile-button:focus, .primary-action-button:visited, .comment-form-submit:visited, .verify-button:visited, .accredit-button:visited, .create-button:visited, .auth-button:visited, .investment-inquire-button:visited,
+.investment-interest-button:visited, .investment-follow-button:visited, .investment-question-button:visited, .save-profile-button:visited, .primary-action-button:active, .comment-form-submit:active, .verify-button:active, .accredit-button:active, .create-button:active, .auth-button:active, .investment-inquire-button:active,
+.investment-interest-button:active, .investment-follow-button:active, .investment-question-button:active, .save-profile-button:active, .primary-action-button:focus:hover, .comment-form-submit:focus:hover, .verify-button:focus:hover, .accredit-button:focus:hover, .create-button:focus:hover, .auth-button:focus:hover, .investment-inquire-button:focus:hover,
+.investment-interest-button:focus:hover, .investment-follow-button:focus:hover, .investment-question-button:focus:hover, .save-profile-button:focus:hover, .nav-button, .carousel-nav, .nav-button:hover, .carousel-nav:hover, .header-button, .edit-profile-button, .header-button:hover, .edit-profile-button:hover, .header-button:focus, .edit-profile-button:focus, .header-button:visited, .edit-profile-button:visited, .header-button:active, .edit-profile-button:active, .header-button:focus:hover, .edit-profile-button:focus:hover, .subnav-item, .subnav-item:hover, .profile-button, .profile-button:hover, .profile-link, .profile-link:focus, .profile-link:visited, .profile-link:active, .profile-link:focus:hover, .category-tag, .step-button, .step-button.hover, .step-button.complete, .step-button.active, .non-investor .step-button, .non-investor .step-button.hover, .non-investor .step-button.complete, .non-investor .step-button.active, .investment-tab, .investment-tab:hover, .investment-tab.hover, .investment-tab.complete, .investment-tab.active, .comment-button, .toggle-button, .accredit-toggle, label.toggle-button, label.accredit-toggle, .residency-toggle, .invest-amount-toggle, .invest-interest-form label.invest-contact-toggle, .comment-button:hover, .toggle-button:hover, .accredit-toggle:hover, .residency-toggle:hover, .invest-amount-toggle:hover, .invest-interest-form label.invest-contact-toggle:hover, .hover.comment-button, .hover.toggle-button, .hover.accredit-toggle, .hover.residency-toggle, .hover.invest-amount-toggle, .invest-interest-form label.hover.invest-contact-toggle, .company-tab, .company-tab:hover, .company-tab.hover, .company-tab.complete, .company-tab.active, .investment-status-sc, .investment-status-op, .investment-status-po, .investment-status-pr {
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0.1875em;
+  display: inline-block;
+  font-size: 1em;
+  line-height: 1;
+  padding: .75em 1em;
+  text-decoration: none; }
+
+/* line 1, ../sass/base/_typography.scss */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  color: #333333;
+  font-size: 1em;
+  line-height: 1.5; }
+
+/* line 10, ../sass/base/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 17, ../sass/base/_typography.scss */
+h1 {
+  font-size: 2.25em; }
+
+/* line 21, ../sass/base/_typography.scss */
+h2 {
+  font-size: 2em; }
+
+/* line 25, ../sass/base/_typography.scss */
+h3 {
+  font-size: 1.75em; }
+
+/* line 29, ../sass/base/_typography.scss */
+h4 {
+  font-size: 1.5em; }
+
+/* line 33, ../sass/base/_typography.scss */
+h5 {
+  font-size: 1.25em; }
+
+/* line 37, ../sass/base/_typography.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 41, ../sass/base/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 45, ../sass/base/_typography.scss */
+a {
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear;
+  color: #477dca;
+  text-decoration: none; }
+  /* line 50, ../sass/base/_typography.scss */
+  a:hover {
+    color: #2c5999; }
+  /* line 54, ../sass/base/_typography.scss */
+  a:active, a:focus {
+    color: #2c5999;
+    outline: none; }
+
+/* line 60, ../sass/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #dddddd;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 68, ../sass/base/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 73, ../sass/base/_typography.scss */
+blockquote {
+  border-left: 2px solid #dddddd;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 80, ../sass/base/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 84, ../sass/base/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 1, ../sass/base/_forms.scss */
+fieldset {
+  background: #f7f7f7;
+  border: 1px solid #dddddd;
+  margin: 0 0 0.75em 0;
+  padding: 1.5em; }
+
+/* line 8, ../sass/base/_forms.scss */
+input,
+label,
+select {
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em; }
+
+/* line 16, ../sass/base/_forms.scss */
+label {
+  font-weight: bold;
+  margin-bottom: 0.375em; }
+  /* line 20, ../sass/base/_forms.scss */
+  label.required:after {
+    content: "*"; }
+  /* line 24, ../sass/base/_forms.scss */
+  label abbr {
+    display: none; }
+
+/* line 29, ../sass/base/_forms.scss */
+textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
+select[multiple=multiple] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: border-color;
+  -moz-transition: border-color;
+  transition: border-color;
+  background-color: white;
+  border-radius: 0.1875em;
+  border: 1px solid #dddddd;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em 0.5em;
+  width: 100%; }
+  /* line 44, ../sass/base/_forms.scss */
+  textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
+  select[multiple=multiple]:hover {
+    border-color: #c4c4c4; }
+  /* line 48, ../sass/base/_forms.scss */
+  textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
+  select[multiple=multiple]:focus {
+    border-color: #477dca;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(55, 112, 192, 0.7);
+    outline: none; }
+
+/* line 55, ../sass/base/_forms.scss */
+textarea {
+  resize: vertical; }
+
+/* line 59, ../sass/base/_forms.scss */
+input[type="search"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none; }
+
+/* line 63, ../sass/base/_forms.scss */
+input[type="checkbox"], input[type="radio"] {
+  display: inline;
+  margin-right: 0.375em; }
+
+/* line 68, ../sass/base/_forms.scss */
+input[type="file"] {
+  margin-bottom: 0.75em;
+  padding-bottom: 0.5em;
+  width: 100%; }
+
+/* line 74, ../sass/base/_forms.scss */
+select {
+  width: auto;
+  max-width: 100%;
+  margin-bottom: 1.5em; }
+
+/* line 1, ../sass/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, ../sass/base/_tables.scss */
+th {
+  border-bottom: 1px solid #b7b7b7;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, ../sass/base/_tables.scss */
+td {
+  border-bottom: 1px solid #dddddd;
+  padding: 0.75em 0; }
+
+/* line 20, ../sass/base/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, ../sass/base/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 19, ../sass/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em; }
+  /* line 22, ../sass/base/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 27, ../sass/base/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, ../sass/base/_buttons.scss */
+button,
+input[type="submit"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+
+/* https://github.com/OwlFonk/OwlCarousel2 */
+/* 
+ *  Owl Carousel - Animate Plugin
+ */
+/* line 5, ../sass/owlcarousel/functions/_owl_animate.scss */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+  animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+/* line 11, ../sass/owlcarousel/functions/_owl_animate.scss */
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+/* line 14, ../sass/owlcarousel/functions/_owl_animate.scss */
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+/* line 17, ../sass/owlcarousel/functions/_owl_animate.scss */
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  /* line 24, ../sass/owlcarousel/functions/_owl_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 28, ../sass/owlcarousel/functions/_owl_animate.scss */
+  100% {
+    opacity: 0; } }
+@keyframes fadeOut {
+  /* line 33, ../sass/owlcarousel/functions/_owl_animate.scss */
+  0% {
+    opacity: 1; }
+
+  /* line 37, ../sass/owlcarousel/functions/_owl_animate.scss */
+  100% {
+    opacity: 0; } }
+/* 
+ * 	Owl Carousel - Auto Height Plugin
+ */
+/* line 7, ../sass/owlcarousel/functions/_owl_autoheight.scss */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+/* 
+ *  Core Owl Carousel CSS File
+ */
+/* line 4, ../sass/owlcarousel/functions/_owl_carousel.scss */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  /* line 12, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y; }
+  /* line 17, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  /* line 26, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  /* line 33, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  /* line 41, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    -webkit-transform-style: preserve-3d; }
+  /* line 47, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel .owl-controls .owl-nav .owl-prev,
+  .owl-carousel .owl-controls .owl-nav .owl-next,
+  .owl-carousel .owl-controls .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  /* line 59, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-loaded {
+    display: block; }
+  /* line 63, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  /* line 68, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  /* line 72, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-refresh .owl-item {
+    display: none; }
+  /* line 76, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  /* line 83, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab; }
+  /* line 91, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  /* line 95, ../sass/owlcarousel/functions/_owl_carousel.scss */
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+/* line 101, ../sass/owlcarousel/functions/_owl_carousel.scss */
+.no-js .owl-carousel {
+  display: block; }
+
+/* 
+ * 	Owl Carousel - Lazy Load Plugin
+ */
+/* line 9, ../sass/owlcarousel/functions/_owl_lazyload.scss */
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+/* line 13, ../sass/owlcarousel/functions/_owl_lazyload.scss */
+.owl-carousel .owl-item img {
+  transform-style: preserve-3d; }
+
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+/* line 8, ../sass/owlcarousel/functions/_owl_video.scss */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+/* line 13, ../sass/owlcarousel/functions/_owl_video.scss */
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("../img/owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: scale 100ms ease;
+  -moz-transition: scale 100ms ease;
+  -ms-transition: scale 100ms ease;
+  -o-transition: scale 100ms ease;
+  transition: scale 100ms ease; }
+/* line 27, ../sass/owlcarousel/functions/_owl_video.scss */
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transition: scale(1.3, 1.3);
+  -moz-transition: scale(1.3, 1.3);
+  -ms-transition: scale(1.3, 1.3);
+  -o-transition: scale(1.3, 1.3);
+  transition: scale(1.3, 1.3); }
+/* line 30, ../sass/owlcarousel/functions/_owl_video.scss */
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+/* line 34, ../sass/owlcarousel/functions/_owl_video.scss */
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  -moz-transition: opacity 400ms ease;
+  -ms-transition: opacity 400ms ease;
+  -o-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+/* line 45, ../sass/owlcarousel/functions/_owl_video.scss */
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1; }
+
+/* Include if you use a theme */
+/* line 1, ../sass/owlcarousel/_fintech_theme.scss */
+.owl-dot {
+  opacity: 0.4; }
+  /* line 4, ../sass/owlcarousel/_fintech_theme.scss */
+  .owl-dot.active, .owl-dot:hover {
+    opacity: 1; }
+
+/* import app elements */
+/**
+* @license
+* MyFonts Webfont Build ID 2842913, 2014-07-09T17:56:09-0400
+*
+* The fonts listed in this notice are subject to the End User License
+* Agreement(s) entered into by the website owner. All other parties are
+* explicitly restricted from using the Licensed Webfonts(s).
+*
+* You may obtain a valid license at the URLs below.
+*
+* Webfont: Helvetica Neue 75 Bold by Linotype
+* URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-75-bold/
+*
+* Webfont: Helvetica Neue 55 Roman by Linotype
+* URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-55-roman/
+*
+* Webfont: Helvetica Neue 65 Medium by Linotype
+* URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-65-medium/
+*
+* Webfont: Helvetica Neue 56 Italic by Linotype
+* URL: http://www.myfonts.com/fonts/linotype/neue-helvetica/helvetica-56-italic/
+*
+*
+* License: http://www.myfonts.com/viewlicense?type=web&buildid=2842913
+* Licensed pageviews: 250,000
+* Webfonts copyright: Copyright &#x00A9; 1988, 1990, 1993, 2002 Adobe Systems Incorporated.  All Rights Reserved. &#x00A9; 1981, 2002 Heidelberger Druckmaschinen AG. All rights reserved.
+*
+* Â© 2014 MyFonts Inc
+*/
+/* @import must be at top of file, otherwise CSS will not work */
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Bd';
+  src: url("../fonts/2B6121_0_0.eot");
+  src: url("../fonts/2B6121_0_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2B6121_0_0.woff") format("woff"), url("../fonts/2B6121_0_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Roman';
+  src: url("../fonts/2B6121_1_0.eot");
+  src: url("../fonts/2B6121_1_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2B6121_1_0.woff") format("woff"), url("../fonts/2B6121_1_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Md';
+  src: url("../fonts/2B6121_2_0.eot");
+  src: url("../fonts/2B6121_2_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2B6121_2_0.woff") format("woff"), url("../fonts/2B6121_2_0.ttf") format("truetype"); }
+@font-face {
+  font-family: 'HelveticaNeueLTStd-It';
+  src: url("../fonts/2B6121_3_0.eot");
+  src: url("../fonts/2B6121_3_0.eot?#iefix") format("embedded-opentype"), url("../fonts/2B6121_3_0.woff") format("woff"), url("../fonts/2B6121_3_0.ttf") format("truetype"); }
+/* End Adobe-licensed code */
+/* Socicon icon font for social icons */
+@font-face {
+  font-family: 'socicon';
+  src: url("../fonts/socicon-webfont.eot");
+  src: url("../fonts/socicon-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/socicon-webfont.woff") format("woff"), url("../fonts/socicon-webfont.ttf") format("truetype"), url("../fonts/socicon-webfont.svg#sociconregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 81, ../sass/_typography.scss */
+.facebook-icon, .facebook-icon-login, .linkedin-icon, .linkedin-icon-login, .twitter-icon, .twitter-icon-login {
+  font-family: 'socicon' !important; }
+
+/* Define app fonts */
+/* line 90, ../sass/_typography.scss */
+.primary-action-button, .comment-form-submit, .verify-button, .accredit-button, .create-button, .auth-button, .investment-inquire-button,
+.investment-interest-button, .investment-follow-button, .investment-question-button, .save-profile-button, .primary-action-button:hover, .comment-form-submit:hover, .verify-button:hover, .accredit-button:hover, .create-button:hover, .auth-button:hover, .investment-inquire-button:hover,
+.investment-interest-button:hover, .investment-follow-button:hover, .investment-question-button:hover, .save-profile-button:hover, .primary-action-button:focus, .comment-form-submit:focus, .verify-button:focus, .accredit-button:focus, .create-button:focus, .auth-button:focus, .investment-inquire-button:focus,
+.investment-interest-button:focus, .investment-follow-button:focus, .investment-question-button:focus, .save-profile-button:focus, .primary-action-button:visited, .comment-form-submit:visited, .verify-button:visited, .accredit-button:visited, .create-button:visited, .auth-button:visited, .investment-inquire-button:visited,
+.investment-interest-button:visited, .investment-follow-button:visited, .investment-question-button:visited, .save-profile-button:visited, .primary-action-button:active, .comment-form-submit:active, .verify-button:active, .accredit-button:active, .create-button:active, .auth-button:active, .investment-inquire-button:active,
+.investment-interest-button:active, .investment-follow-button:active, .investment-question-button:active, .save-profile-button:active, .primary-action-button:focus:hover, .comment-form-submit:focus:hover, .verify-button:focus:hover, .accredit-button:focus:hover, .create-button:focus:hover, .auth-button:focus:hover, .investment-inquire-button:focus:hover,
+.investment-interest-button:focus:hover, .investment-follow-button:focus:hover, .investment-question-button:focus:hover, .save-profile-button:focus:hover, .textarea-label, .comment-box-label, .text-label, #password-label, .left-aligned-label, .footer-link, .comment-button, .category-tag, .category-tag:hover, .avatar.small, .avatar.medium, .avatar.large, .avatar.x-large, .company-document-title, .social-link-set .social-connection-status, .ui-kit-title {
+  font-family: "futura-pt", "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 500; }
+
+/* line 95, ../sass/_typography.scss */
+.header-button, .edit-profile-button, .header-button:hover, .edit-profile-button:hover, .header-button:focus, .edit-profile-button:focus, .header-button:visited, .edit-profile-button:visited, .header-button:active, .edit-profile-button:active, .header-button:focus:hover, .edit-profile-button:focus:hover, .header-button.active, .active.edit-profile-button, .header-button.active:hover, .active.edit-profile-button:hover, .subnav-item, .subnav-item:hover, .step-button, .step-button.hover, .step-button.complete, .step-button.active, .non-investor .step-button, .non-investor .step-button.hover, .non-investor .step-button.complete, .non-investor .step-button.active, .investment-tab:hover, .investment-tab, .investment-tab.hover, .investment-tab.complete, .investment-tab.active, .company-tab:hover, .company-tab, .company-tab.hover, .company-tab.complete, .company-tab.active, .profile-link, .profile-link:hover, .press-publish-date, .company-press-link, .company-press-title {
+  font-family: "futura-pt", "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 600; }
+
+/* line 100, ../sass/_typography.scss */
+.profile-button, label.toggle-button li, label.accredit-toggle li, .verify-text, .company-press-preview, p.invest-step-description, .company-active-questions-section {
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal; }
+
+/* line 105, ../sass/_typography.scss */
+.toggle-button, .accredit-toggle, label.toggle-button, label.accredit-toggle, .residency-toggle, .invest-amount-toggle, .invest-interest-form label.invest-contact-toggle, .invest-step, p.invest-step-title {
+  font-family: "HelveticaNeueLTStd-Bd", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: normal; }
+
+/* insert global styling rules for elements and base classes */
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 6, ../sass/_global_design.scss */
+  html, body {
+    height: 100%; }
+
+  /* line 9, ../sass/_global_design.scss */
+  #main {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -600px; }
+    /* line 15, ../sass/_global_design.scss */
+    #main #main-footer {
+      height: 600px; }
+
+  /* line 19, ../sass/_global_design.scss */
+  #footer {
+    clear: both;
+    position: relative;
+    height: 600px; } }
+@media screen and (min-width: 60em) {
+  /* line 6, ../sass/_global_design.scss */
+  html, body {
+    height: 100%; }
+
+  /* line 9, ../sass/_global_design.scss */
+  #main {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -350px; }
+    /* line 15, ../sass/_global_design.scss */
+    #main #main-footer {
+      height: 350px; }
+
+  /* line 19, ../sass/_global_design.scss */
+  #footer {
+    clear: both;
+    position: relative;
+    height: 350px; } }
+/* line 37, ../sass/_global_design.scss */
+#main-footer {
+  width: 100%;
+  background: #262425; }
+
+/* line 42, ../sass/_global_design.scss */
+body {
+  margin: 0;
+  font-family: "futura-pt", "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 47, ../sass/_global_design.scss */
+hr {
+  border-bottom: 1px solid #3a3939;
+  margin: 10px auto; }
+
+/* line 52, ../sass/_global_design.scss */
+hr.small {
+  width: 40%; }
+
+/* line 56, ../sass/_global_design.scss */
+.clear {
+  clear: both;
+  margin: 0 auto; }
+
+/* line 54, ../sass/ui_patterns/_buttons.scss */
+.primary-action-button, .comment-form-submit, .verify-button, .accredit-button, .create-button, .auth-button, .investment-inquire-button,
+.investment-interest-button, .investment-follow-button, .investment-question-button, .save-profile-button, .primary-action-button:hover, .comment-form-submit:hover, .verify-button:hover, .accredit-button:hover, .create-button:hover, .auth-button:hover, .investment-inquire-button:hover,
+.investment-interest-button:hover, .investment-follow-button:hover, .investment-question-button:hover, .save-profile-button:hover, .primary-action-button:focus, .comment-form-submit:focus, .verify-button:focus, .accredit-button:focus, .create-button:focus, .auth-button:focus, .investment-inquire-button:focus,
+.investment-interest-button:focus, .investment-follow-button:focus, .investment-question-button:focus, .save-profile-button:focus, .primary-action-button:visited, .comment-form-submit:visited, .verify-button:visited, .accredit-button:visited, .create-button:visited, .auth-button:visited, .investment-inquire-button:visited,
+.investment-interest-button:visited, .investment-follow-button:visited, .investment-question-button:visited, .save-profile-button:visited, .primary-action-button:active, .comment-form-submit:active, .verify-button:active, .accredit-button:active, .create-button:active, .auth-button:active, .investment-inquire-button:active,
+.investment-interest-button:active, .investment-follow-button:active, .investment-question-button:active, .save-profile-button:active, .primary-action-button:focus:hover, .comment-form-submit:focus:hover, .verify-button:focus:hover, .accredit-button:focus:hover, .create-button:focus:hover, .auth-button:focus:hover, .investment-inquire-button:focus:hover,
+.investment-interest-button:focus:hover, .investment-follow-button:focus:hover, .investment-question-button:focus:hover, .save-profile-button:focus:hover {
+  margin-bottom: 0.5em;
+  padding: 0.65em 3.5em;
+  font-size: 0.9em; }
+
+/* line 61, ../sass/ui_patterns/_buttons.scss */
+.primary-action-button, .comment-form-submit, .verify-button, .accredit-button, .create-button, .auth-button, .investment-inquire-button,
+.investment-interest-button, .investment-follow-button, .investment-question-button, .save-profile-button {
+  border-radius: 0;
+  outline: none;
+  background-color: #d7551a;
+  color: white; }
+  /* line 65, ../sass/ui_patterns/_buttons.scss */
+  .primary-action-button:hover, .comment-form-submit:hover, .verify-button:hover, .accredit-button:hover, .create-button:hover, .auth-button:hover, .investment-inquire-button:hover,
+  .investment-interest-button:hover, .investment-follow-button:hover, .investment-question-button:hover, .save-profile-button:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #ff6f20;
+    color: white; }
+  /* line 70, ../sass/ui_patterns/_buttons.scss */
+  .primary-action-button[disabled=disabled], [disabled=disabled].comment-form-submit, [disabled=disabled].verify-button, [disabled=disabled].accredit-button, [disabled=disabled].create-button, [disabled=disabled].auth-button, [disabled=disabled].investment-inquire-button,
+  [disabled=disabled].investment-interest-button, [disabled=disabled].investment-follow-button, [disabled=disabled].investment-question-button, [disabled=disabled].save-profile-button, .primary-action-button[disabled=disabled]:hover, [disabled=disabled].comment-form-submit:hover, [disabled=disabled].verify-button:hover, [disabled=disabled].accredit-button:hover, [disabled=disabled].create-button:hover, [disabled=disabled].auth-button:hover, [disabled=disabled].investment-inquire-button:hover,
+  [disabled=disabled].investment-interest-button:hover, [disabled=disabled].investment-follow-button:hover, [disabled=disabled].investment-question-button:hover, [disabled=disabled].save-profile-button:hover {
+    cursor: default;
+    background-color: #d7551a; }
+  /* line 76, ../sass/ui_patterns/_buttons.scss */
+  .primary-action-button:focus, .comment-form-submit:focus, .verify-button:focus, .accredit-button:focus, .create-button:focus, .auth-button:focus, .investment-inquire-button:focus,
+  .investment-interest-button:focus, .investment-follow-button:focus, .investment-question-button:focus, .save-profile-button:focus, .primary-action-button:visited, .comment-form-submit:visited, .verify-button:visited, .accredit-button:visited, .create-button:visited, .auth-button:visited, .investment-inquire-button:visited,
+  .investment-interest-button:visited, .investment-follow-button:visited, .investment-question-button:visited, .save-profile-button:visited, .primary-action-button:active, .comment-form-submit:active, .verify-button:active, .accredit-button:active, .create-button:active, .auth-button:active, .investment-inquire-button:active,
+  .investment-interest-button:active, .investment-follow-button:active, .investment-question-button:active, .save-profile-button:active, .primary-action-button:focus:hover, .comment-form-submit:focus:hover, .verify-button:focus:hover, .accredit-button:focus:hover, .create-button:focus:hover, .auth-button:focus:hover, .investment-inquire-button:focus:hover,
+  .investment-interest-button:focus:hover, .investment-follow-button:focus:hover, .investment-question-button:focus:hover, .save-profile-button:focus:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #ab4010;
+    color: white; }
+
+/* line 85, ../sass/ui_patterns/_buttons.scss */
+.primary-action-button.hover, .hover.comment-form-submit, .hover.verify-button, .hover.accredit-button, .hover.create-button, .hover.auth-button, .hover.investment-inquire-button,
+.hover.investment-interest-button, .hover.investment-follow-button, .hover.investment-question-button, .hover.save-profile-button {
+  background-color: #ff6f20; }
+  /* line 88, ../sass/ui_patterns/_buttons.scss */
+  .primary-action-button.hover:hover, .hover.comment-form-submit:hover, .hover.verify-button:hover, .hover.accredit-button:hover, .hover.create-button:hover, .hover.auth-button:hover, .hover.investment-inquire-button:hover,
+  .hover.investment-interest-button:hover, .hover.investment-follow-button:hover, .hover.investment-question-button:hover, .hover.save-profile-button:hover {
+    background-color: #ff6f20; }
+
+/* line 93, ../sass/ui_patterns/_buttons.scss */
+.primary-action-button.active, .active.comment-form-submit, .active.verify-button, .active.accredit-button, .active.create-button, .active.auth-button, .active.investment-inquire-button,
+.active.investment-interest-button, .active.investment-follow-button, .active.investment-question-button, .active.save-profile-button {
+  background-color: #ab4010; }
+  /* line 96, ../sass/ui_patterns/_buttons.scss */
+  .primary-action-button.active:hover, .active.comment-form-submit:hover, .active.verify-button:hover, .active.accredit-button:hover, .active.create-button:hover, .active.auth-button:hover, .active.investment-inquire-button:hover,
+  .active.investment-interest-button:hover, .active.investment-follow-button:hover, .active.investment-question-button:hover, .active.save-profile-button:hover {
+    background-color: #ab4010; }
+
+/* line 102, ../sass/ui_patterns/_buttons.scss */
+.company-tab.active span {
+  padding: 0; }
+
+/* line 108, ../sass/ui_patterns/_buttons.scss */
+.company-tab:hover span {
+  padding: 0; }
+
+/* line 2, ../sass/ui_patterns/_inputs.scss */
+.required {
+  color: #d0171c; }
+
+/* line 6, ../sass/ui_patterns/_inputs.scss */
+ul.errorlist {
+  padding-left: 0px; }
+  /* line 8, ../sass/ui_patterns/_inputs.scss */
+  ul.errorlist li {
+    list-style: none;
+    color: #d0171c; }
+
+/* line 15, ../sass/ui_patterns/_inputs.scss */
+p.errors {
+  color: #d0171c;
+  text-align: center; }
+
+/* line 20, ../sass/ui_patterns/_inputs.scss */
+input[type=text].error,
+input[type=email].error,
+input[type=password].error {
+  border-bottom: 0.1em solid #d0171c; }
+  /* line 25, ../sass/ui_patterns/_inputs.scss */
+  input[type=text].error:hover, input[type=text].error:focus, input[type=text].error:active,
+  input[type=email].error:hover,
+  input[type=email].error:focus,
+  input[type=email].error:active,
+  input[type=password].error:hover,
+  input[type=password].error:focus,
+  input[type=password].error:active {
+    border-bottom: 0.1em solid #d0171c; }
+
+/* line 33, ../sass/ui_patterns/_inputs.scss */
+.textarea-label, .comment-box-label, .text-label, #password-label, .left-aligned-label {
+  text-transform: uppercase;
+  color: #929292; }
+  /* line 38, ../sass/ui_patterns/_inputs.scss */
+  .error.textarea-label, .error.comment-box-label, .error.text-label, .error#password-label, .error.left-aligned-label {
+    color: #d0171c; }
+
+/* line 47, ../sass/ui_patterns/_inputs.scss */
+.text-label, #password-label {
+  display: inline-block; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 47, ../sass/ui_patterns/_inputs.scss */
+    .text-label, #password-label {
+      text-align: left;
+      width: 100%;
+      padding-left: 1em; } }
+
+/* line 58, ../sass/ui_patterns/_inputs.scss */
+.left-aligned-label {
+  display: inline-block;
+  padding-right: 0.5em;
+  float: left;
+  font-size: 0.9em;
+  text-align: right; }
+
+/* line 69, ../sass/ui_patterns/_inputs.scss */
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password], textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 0.1em solid #58595b;
+  border-radius: 0;
+  padding: 0.5em 1em;
+  color: white; }
+  /* line 78, ../sass/ui_patterns/_inputs.scss */
+  input[type=text]:hover,
+  input[type=tel]:hover,
+  input[type=email]:hover,
+  input[type=password]:hover, textarea:hover, input[type=text]:focus,
+  input[type=tel]:focus,
+  input[type=email]:focus,
+  input[type=password]:focus, textarea:focus, input[type=text]:active,
+  input[type=tel]:active,
+  input[type=email]:active,
+  input[type=password]:active, textarea:active, input.active[type=text],
+  input.active[type=tel],
+  input.active[type=email],
+  input.active[type=password], textarea.active {
+    border-bottom: 0.1em solid #d7551a;
+    outline: none; }
+
+/* line 87, ../sass/ui_patterns/_inputs.scss */
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=password] {
+  display: inline-block; }
+  /* line 4, ../sass/bourbon/css3/_placeholder.scss */
+  input[type=text]::-webkit-input-placeholder,
+  input[type=tel]::-webkit-input-placeholder,
+  input[type=email]::-webkit-input-placeholder,
+  input[type=password]::-webkit-input-placeholder {
+    font-style: italic; }
+  /* line 4, ../sass/bourbon/css3/_placeholder.scss */
+  input[type=text]::-moz-placeholder,
+  input[type=tel]::-moz-placeholder,
+  input[type=email]::-moz-placeholder,
+  input[type=password]::-moz-placeholder {
+    font-style: italic; }
+  /* line 4, ../sass/bourbon/css3/_placeholder.scss */
+  input[type=text]:-moz-placeholder,
+  input[type=tel]:-moz-placeholder,
+  input[type=email]:-moz-placeholder,
+  input[type=password]:-moz-placeholder {
+    font-style: italic; }
+  /* line 4, ../sass/bourbon/css3/_placeholder.scss */
+  input[type=text]:-ms-input-placeholder,
+  input[type=tel]:-ms-input-placeholder,
+  input[type=email]:-ms-input-placeholder,
+  input[type=password]:-ms-input-placeholder {
+    font-style: italic; }
+
+/* line 99, ../sass/ui_patterns/_inputs.scss */
+textarea {
+  background: #58595b;
+  resize: none;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 1em;
+  height: 6em; }
+
+/* line 109, ../sass/ui_patterns/_inputs.scss */
+input[type=checkbox] {
+  display: none; }
+
+/* line 113, ../sass/ui_patterns/_inputs.scss */
+input[type=radio] {
+  display: none; }
+
+/* line 117, ../sass/ui_patterns/_inputs.scss */
+input[type=checkbox] + label {
+  display: inline-block;
+  position: relative;
+  height: 1em;
+  width: 1em;
+  cursor: pointer;
+  font-size: 1em;
+  background-color: transparent;
+  border: 0.1em solid #58595b; }
+
+/* line 128, ../sass/ui_patterns/_inputs.scss */
+input:checked + label {
+  border: 0.1em solid white; }
+
+/* line 132, ../sass/ui_patterns/_inputs.scss */
+input[type=checkbox]:checked + label:after {
+  content: "\2713";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #d7551a;
+  width: 100%;
+  text-align: center;
+  vertical-align: text-top;
+  font-size: 1em;
+  line-height: 1; }
+
+/* line 145, ../sass/ui_patterns/_inputs.scss */
+.checkbox-text {
+  display: inline-table;
+  text-align: left;
+  vertical-align: top;
+  margin-left: 1em;
+  line-height: 1.5; }
+
+/* line 153, ../sass/ui_patterns/_inputs.scss */
+.checkbox-label {
+  display: inline-block;
+  vertical-align: top;
+  color: white;
+  line-height: 1;
+  margin-bottom: 0; }
+
+/* line 161, ../sass/ui_patterns/_inputs.scss */
+.checkbox-label a {
+  color: white;
+  text-decoration: underline; }
+
+/* line 166, ../sass/ui_patterns/_inputs.scss */
+.checkbox-help {
+  font-style: italic;
+  line-height: 1; }
+
+/* line 72, ../sass/ui_patterns/_containers.scss */
+.header-button, .edit-profile-button, .privacy-modal, .onboarding-modal, .invest-interest-modal, .invest-forward-modal, #MailingListForm {
+  border-top: 0.15em solid #d7551a; }
+
+/* line 76, ../sass/ui_patterns/_containers.scss */
+.ui-kit-elements, .ui-nav-column {
+  margin-right: 0; }
+
+/* line 80, ../sass/ui_patterns/_containers.scss */
+.pull-right {
+  float: right; }
+
+/* import app modules */
+/* line 1, ../sass/modules/_navigation.scss */
+.nav-button, .carousel-nav, .nav-button:hover, .carousel-nav:hover {
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 1em;
+  width: 0.5em;
+  font-size: 6em;
+  padding: 0em; }
+
+/* line 11, ../sass/modules/_navigation.scss */
+.nav-button, .carousel-nav {
+  border-radius: 0;
+  outline: none;
+  background-color: rgba(38, 36, 37, 0.5);
+  color: white;
+  -webkit-filter: contrast(30%);
+  filter: contrast(30%); }
+  /* line 16, ../sass/modules/_navigation.scss */
+  .nav-button:hover, .carousel-nav:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    -webkit-filter: contrast(100%);
+    filter: contrast(100%); }
+
+/* line 23, ../sass/modules/_navigation.scss */
+.nav-button.left, .left.carousel-nav {
+  background-image: url("../img/nav_arrow_left.png"); }
+
+/* line 27, ../sass/modules/_navigation.scss */
+.nav-button.right, .right.carousel-nav {
+  background-image: url("../img/nav_arrow_right.png"); }
+
+/* line 31, ../sass/modules/_navigation.scss */
+.nav-indicator-list {
+  display: inline-block;
+  margin: 0 auto; }
+
+/* line 36, ../sass/modules/_navigation.scss */
+.nav-indicator {
+  display: inline-block;
+  border: 0.1em solid #d7551a;
+  border-radius: 0.5em;
+  margin-right: 0.25em;
+  background-color: transparent;
+  height: 0.75em;
+  width: 0.75em; }
+  /* line 45, ../sass/modules/_navigation.scss */
+  .nav-indicator:hover {
+    cursor: pointer; }
+
+/* line 50, ../sass/modules/_navigation.scss */
+.nav-indicator.active {
+  background-color: #d7551a; }
+
+/* line 1, ../sass/modules/_header_nav.scss */
+header.navigation {
+  background: #262425; }
+
+/* line 5, ../sass/modules/_header_nav.scss */
+.header-button, .edit-profile-button, .header-button:hover, .edit-profile-button:hover, .header-button:focus, .edit-profile-button:focus, .header-button:visited, .edit-profile-button:visited, .header-button:active, .edit-profile-button:active, .header-button:focus:hover, .edit-profile-button:focus:hover, .header-button.active, .active.edit-profile-button, .header-button.active:hover, .active.edit-profile-button:hover, .subnav-item, .subnav-item:hover, .step-button, .step-button.hover, .step-button.complete, .step-button.active, .non-investor .step-button, .non-investor .step-button.hover, .non-investor .step-button.complete, .non-investor .step-button.active, .investment-tab:hover, .investment-tab, .investment-tab.hover, .investment-tab.complete, .investment-tab.active, .company-tab:hover, .company-tab, .company-tab.hover, .company-tab.complete, .company-tab.active {
+  margin: 0;
+  padding: 0.65em 2.5em;
+  vertical-align: top;
+  height: 100%;
+  font-family: "futura-pt", "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9em; }
+
+/* line 15, ../sass/modules/_header_nav.scss */
+.header-button, .edit-profile-button {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: white;
+  position: relative;
+  color: white; }
+  /* line 21, ../sass/modules/_header_nav.scss */
+  .header-button:hover, .edit-profile-button:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #3c3a3b;
+    color: white;
+    border-top: 0.15em solid #ff6f20;
+    color: #58595b; }
+  /* line 28, ../sass/modules/_header_nav.scss */
+  .header-button:focus, .edit-profile-button:focus, .header-button:visited, .edit-profile-button:visited, .header-button:active, .edit-profile-button:active, .header-button:focus:hover, .edit-profile-button:focus:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    border-top: 0.15em solid #ab4010; }
+
+/* line 38, ../sass/modules/_header_nav.scss */
+.header-button.hover, .hover.edit-profile-button {
+  border-top: 0.15em solid #ff6f20;
+  background-color: #3c3a3b;
+  color: #58595b; }
+  /* line 43, ../sass/modules/_header_nav.scss */
+  .header-button.hover:hover, .hover.edit-profile-button:hover {
+    border-top: 0.15em solid #ff6f20;
+    background-color: #3c3a3b;
+    color: #58595b; }
+
+/* line 50, ../sass/modules/_header_nav.scss */
+.header-button.active, .active.edit-profile-button {
+  border-top: 0.15em solid #ab4010;
+  background-color: #262425;
+  color: white; }
+  /* line 56, ../sass/modules/_header_nav.scss */
+  .header-button.active:hover, .active.edit-profile-button:hover {
+    border-top: 0.15em solid #ab4010;
+    background-color: #262425;
+    color: white; }
+
+/* line 65, ../sass/modules/_header_nav.scss */
+.subnav-item {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: #58595b;
+  position: relative;
+  border-top: 1px solid #58595b; }
+  /* line 71, ../sass/modules/_header_nav.scss */
+  .subnav-item:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    border-top: 1px solid #d7551a; }
+  /* line 77, ../sass/modules/_header_nav.scss */
+  .subnav-item:before {
+    content: " ";
+    position: absolute;
+    z-index: 0;
+    top: -2px;
+    left: 0;
+    right: 0;
+    border-top: 1px solid transparent; }
+
+/* line 88, ../sass/modules/_header_nav.scss */
+.subnav-item.hover,
+.subnav-item:focus,
+.subnav-item:active,
+.subnav-item.active {
+  cursor: default;
+  background: #262425;
+  color: white;
+  border-top: 1px solid #d7551a; }
+
+/* line 98, ../sass/modules/_header_nav.scss */
+.subnav-item:hover:before,
+.subnav-item.hover:before,
+.subnav-item:focus:before,
+.subnav-item:visited:before,
+.subnav-item:active:before,
+.subnav-item.active:before {
+  border-top: 1px solid #d7551a;
+  margin-top: 2px; }
+
+/* line 109, ../sass/modules/_header_nav.scss */
+.nav-header .container, .nav-header .nav-container, .nav-header .footer-container, .nav-header .main-container {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.302);
+  padding-top: 1em;
+  height: 4em; }
+
+/* line 117, ../sass/modules/_header_nav.scss */
+.nav-container {
+  position: relative; }
+
+/* line 122, ../sass/modules/_header_nav.scss */
+.header-subnav {
+  position: relative;
+  height: 3em;
+  background: #262425;
+  margin-top: -.2em; }
+
+/* line 129, ../sass/modules/_header_nav.scss */
+.subnav-divider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-top: 1px solid #58595b; }
+
+/* line 136, ../sass/modules/_header_nav.scss */
+.header-subnav .subnav-item {
+  position: absolute;
+  z-index: 1;
+  width: 11em; }
+
+/* line 142, ../sass/modules/_header_nav.scss */
+.header-subnav .subnav-item:first-child {
+  left: 25em;
+  border-left: 1px solid #58595b;
+  border-right: 1px solid #58595b; }
+
+/* line 148, ../sass/modules/_header_nav.scss */
+.header-subnav .subnav-item:nth-child(2) {
+  left: 36em;
+  border-right: 1px solid #58595b; }
+
+/* line 155, ../sass/modules/_header_nav.scss */
+.profile-button {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: white;
+  position: absolute;
+  top: 0em;
+  right: 0;
+  background: transparent;
+  border-bottom: 0.15em solid transparent;
+  height: 4em;
+  z-index: 1; }
+  /* line 164, ../sass/modules/_header_nav.scss */
+  .profile-button .avatar {
+    position: relative;
+    left: 13px; }
+  @media screen and (min-width: 60em) {
+    /* line 155, ../sass/modules/_header_nav.scss */
+    .profile-button {
+      width: 10em; } }
+  /* line 174, ../sass/modules/_header_nav.scss */
+  .profile-button:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    border-bottom: 0.15em solid #d7551a; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 178, ../sass/modules/_header_nav.scss */
+    .profile-button span {
+      display: none; } }
+
+/* line 187, ../sass/modules/_header_nav.scss */
+.profile-button-dropdown {
+  vertical-align: middle;
+  margin: 0.4em 0.6em;
+  display: none; }
+
+/* line 194, ../sass/modules/_header_nav.scss */
+.profile-menu {
+  display: none;
+  position: absolute;
+  top: 4em;
+  right: 0;
+  z-index: 2;
+  width: 10em;
+  text-align: left; }
+  /* line 203, ../sass/modules/_header_nav.scss */
+  .profile-menu:hover {
+    margin-top: -0.125em;
+    border-top: 0.15em solid #d7551a; }
+
+/* line 209, ../sass/modules/_header_nav.scss */
+.profile-menu:hover,
+.profile-button:hover + .profile-menu {
+  display: block; }
+
+/* line 214, ../sass/modules/_header_nav.scss */
+.profile-link, .profile-link:hover {
+  margin: 0;
+  border-top: 1px solid #58595b;
+  padding: 0.65em 2.5em;
+  vertical-align: top;
+  height: 100%;
+  font-family: "futura-pt", "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 0.9em; }
+
+/* line 225, ../sass/modules/_header_nav.scss */
+.profile-link {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: white;
+  display: block;
+  width: 100%;
+  position: relative;
+  color: #58595b !important; }
+  /* line 233, ../sass/modules/_header_nav.scss */
+  .profile-link:hover {
+    background: #262425;
+    color: white !important; }
+  /* line 239, ../sass/modules/_header_nav.scss */
+  .profile-link:focus, .profile-link:visited, .profile-link:active, .profile-link:focus:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white; }
+
+/* line 6, ../sass/modules/_footer.scss */
+.footer-row {
+  display: block; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .footer-row:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (min-width: 60em) {
+  /* line 9, ../sass/modules/_footer.scss */
+  .footer-logo-section, .footer-links-section, .footer-social-section, .footer-comment-section {
+    padding-top: 50px; } }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 15, ../sass/modules/_footer.scss */
+  .footer-logo-section {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-logo-section:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  /* line 15, ../sass/modules/_footer.scss */
+  .footer-logo-section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 6.17215%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-logo-section:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 27, ../sass/modules/_footer.scss */
+  .footer-links-section {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-links-section:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  /* line 27, ../sass/modules/_footer.scss */
+  .footer-links-section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-links-section:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 39, ../sass/modules/_footer.scss */
+  .footer-social-section {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 46.28851%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-social-section:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  /* line 39, ../sass/modules/_footer.scss */
+  .footer-social-section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-social-section:last-child {
+      margin-right: 0; } }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 50, ../sass/modules/_footer.scss */
+  .footer-comment-section {
+    float: left;
+    display: block;
+    margin-right: 7.42297%;
+    width: 100%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-comment-section:last-child {
+      margin-right: 0; } }
+@media screen and (min-width: 60em) {
+  /* line 50, ../sass/modules/_footer.scss */
+  .footer-comment-section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%;
+    border-top: 0.2em solid #d7551a; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .footer-comment-section:last-child {
+      margin-right: 0; } }
+
+/* line 61, ../sass/modules/_footer.scss */
+.footer-copyright-section {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .footer-copyright-section:last-child {
+    margin-right: 0; }
+
+/* line 65, ../sass/modules/_footer.scss */
+.footer-logo {
+  margin-top: 0.5em; }
+
+/* line 69, ../sass/modules/_footer.scss */
+.footer-link {
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  display: block;
+  line-height: 2; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .footer-link:hover, .footer-link:focus, .footer-link:active {
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-decoration: none; }
+
+/* line 76, ../sass/modules/_footer.scss */
+.footer-link.dark {
+  cursor: pointer;
+  color: #58595b;
+  font-size: 1em;
+  text-decoration: none; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .footer-link.dark:hover, .footer-link.dark:focus, .footer-link.dark:active {
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-decoration: none; }
+
+/* line 83, ../sass/modules/_footer.scss */
+.comment-button {
+  font-size: 0.9em;
+  padding: 0.25em 2em;
+  margin-right: 0.5em; }
+  /* line 90, ../sass/modules/_footer.scss */
+  .comment-button:hover {
+    font-size: 0.9em;
+    padding: 0.25em 2em;
+    margin-right: 0.5em; }
+
+/* line 97, ../sass/modules/_footer.scss */
+.comment-box-label {
+  margin-top: 1.5em;
+  font-size: 0.95em; }
+
+/* line 103, ../sass/modules/_footer.scss */
+.comment-box {
+  width: 100%; }
+
+/* line 107, ../sass/modules/_footer.scss */
+.copyright-text {
+  color: #58595b;
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600; }
+
+/* line 114, ../sass/modules/_footer.scss */
+.comment-form-submit {
+  float: right;
+  margin-top: 1em; }
+  /* line 119, ../sass/modules/_footer.scss */
+  .comment-form-submit:hover {
+    margin-top: 1em; }
+  /* line 122, ../sass/modules/_footer.scss */
+  .comment-form-submit:active {
+    margin-top: 1em; }
+  /* line 125, ../sass/modules/_footer.scss */
+  .comment-form-submit:focus {
+    margin-top: 1em !important; }
+
+/* extended from https://github.com/kylefox/jquery-modal */
+/* line 9, ../sass/modules/_modal.scss */
+.modal {
+  width: 800px; }
+
+/* line 13, ../sass/modules/_modal.scss */
+.modal a.close-modal {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  display: block;
+  width: 1.25em;
+  height: 1.25em;
+  text-indent: -9999px;
+  background: url("../img/modal_x.png") no-repeat 0 0; }
+
+/* line 24, ../sass/modules/_modal.scss */
+.modal-spinner {
+  display: none;
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-right: -32px;
+  margin-top: -32px;
+  background: url("../img/spinner.gif") black no-repeat center center;
+  border-radius: 8px; }
+
+/* app stylings for owlCarousel */
+/* line 1, ../sass/modules/_carousel.scss */
+.owl-dots {
+  margin-top: 1.25em;
+  max-height: 7.5em;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap; }
+
+/* line 9, ../sass/modules/_carousel.scss */
+.owl-dot {
+  display: inline-block;
+  margin-right: 0.625em; }
+
+/* line 14, ../sass/modules/_carousel.scss */
+.carousel-nav {
+  position: absolute;
+  top: 30%; }
+
+/* line 20, ../sass/modules/_carousel.scss */
+.carousel-nav.left {
+  left: 0; }
+
+/* line 24, ../sass/modules/_carousel.scss */
+.carousel-nav.right {
+  right: 0; }
+
+/* line 28, ../sass/modules/_carousel.scss */
+.item-thumbnail {
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  border: 0 solid transparent;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .item-thumbnail:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 1, ../sass/modules/_tags.scss */
+.category-tag, .category-tag:hover {
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  font-size: 0.9em; }
+
+/* line 8, ../sass/modules/_tags.scss */
+.category-tag {
+  border-radius: 0;
+  outline: none;
+  background-color: rgba(38, 36, 37, 0.5);
+  color: white; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .category-tag:hover {
+    background: rgba(38, 36, 37, 0.5);
+    color: white;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .category-tag:disabled {
+    cursor: default; }
+
+/* line 17, ../sass/modules/_tags.scss */
+.category-tag-icon {
+  margin-right: 0.5em;
+  height: 1em; }
+
+/* line 22, ../sass/modules/_tags.scss */
+.category-tag-text {
+  text-transform: uppercase; }
+
+/* line 31, ../sass/modules/_social.scss */
+.social-container {
+  margin-bottom: 0.75em;
+  text-align: center; }
+
+/* line 36, ../sass/modules/_social.scss */
+.connect-facebook {
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 0.25em 1em;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .connect-facebook:hover, .connect-facebook:focus, .connect-facebook:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1em;
+    text-decoration: none; }
+  /* line 8, ../sass/modules/_social.scss */
+  .connect-facebook .social-text {
+    display: inline-block;
+    width: 11em;
+    font-size: 11pt;
+    text-align: center;
+    vertical-align: super;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 40, ../sass/modules/_social.scss */
+.facebook-icon {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625em;
+  text-transform: none;
+  font-size: 1em;
+  color: #58595b; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .facebook-icon:hover, .facebook-icon:focus, .facebook-icon:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    text-decoration: none; }
+  /* line 25, ../sass/modules/_social.scss */
+  .facebook-icon:before {
+    content: "b"; }
+  /* line 44, ../sass/modules/_social.scss */
+  .facebook-icon:hover {
+    font-size: 1em;
+    color: #58595b; }
+
+/* line 50, ../sass/modules/_social.scss */
+.facebook-icon-login {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625em;
+  text-transform: none; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .facebook-icon-login:hover, .facebook-icon-login:focus, .facebook-icon-login:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    text-decoration: none; }
+  /* line 25, ../sass/modules/_social.scss */
+  .facebook-icon-login:before {
+    content: "b"; }
+
+/* line 54, ../sass/modules/_social.scss */
+.connect-facebook:hover .facebook-icon,
+.connect-facebook:hover .social-text {
+  color: rgba(255, 255, 255, 0.7); }
+
+/* line 59, ../sass/modules/_social.scss */
+.connect-linkedin {
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 0.25em 1em;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .connect-linkedin:hover, .connect-linkedin:focus, .connect-linkedin:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1em;
+    text-decoration: none; }
+  /* line 8, ../sass/modules/_social.scss */
+  .connect-linkedin .social-text {
+    display: inline-block;
+    width: 11em;
+    font-size: 11pt;
+    text-align: center;
+    vertical-align: super;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 63, ../sass/modules/_social.scss */
+.linkedin-icon {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625em;
+  text-transform: none;
+  font-size: 1em;
+  color: #58595b; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .linkedin-icon:hover, .linkedin-icon:focus, .linkedin-icon:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    text-decoration: none; }
+  /* line 25, ../sass/modules/_social.scss */
+  .linkedin-icon:before {
+    content: "j"; }
+  /* line 67, ../sass/modules/_social.scss */
+  .linkedin-icon:hover {
+    font-size: 1em;
+    color: #58595b; }
+
+/* line 73, ../sass/modules/_social.scss */
+.linkedin-icon-login {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625em;
+  text-transform: none; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .linkedin-icon-login:hover, .linkedin-icon-login:focus, .linkedin-icon-login:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    text-decoration: none; }
+  /* line 25, ../sass/modules/_social.scss */
+  .linkedin-icon-login:before {
+    content: "j"; }
+
+/* line 77, ../sass/modules/_social.scss */
+.connect-linkedin:hover .linkedin-icon,
+.connect-linkedin:hover .social-text {
+  color: rgba(255, 255, 255, 0.7); }
+
+/* line 82, ../sass/modules/_social.scss */
+.twitter-icon {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625em;
+  text-transform: none;
+  font-size: 1em;
+  color: #58595b; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .twitter-icon:hover, .twitter-icon:focus, .twitter-icon:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    text-decoration: none; }
+  /* line 25, ../sass/modules/_social.scss */
+  .twitter-icon:before {
+    content: "a"; }
+  /* line 86, ../sass/modules/_social.scss */
+  .twitter-icon:hover {
+    font-size: 1em;
+    color: #58595b; }
+
+/* line 92, ../sass/modules/_social.scss */
+.twitter-icon-login {
+  cursor: pointer;
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 0.625em;
+  text-transform: none; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .twitter-icon-login:hover, .twitter-icon-login:focus, .twitter-icon-login:active {
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.5em;
+    text-decoration: none; }
+  /* line 25, ../sass/modules/_social.scss */
+  .twitter-icon-login:before {
+    content: "a"; }
+
+/* line 50, ../sass/modules/_steps_tabs.scss */
+.step-button {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: white;
+  padding: 1em 2.5em;
+  border-top: 0.15em solid transparent;
+  border-right: 0.1em solid #58595b;
+  font-size: 0.9em;
+  color: #58595b;
+  width: 33.333%; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .step-button:hover {
+    background: #262425;
+    color: #58595b;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .step-button:disabled {
+    cursor: default; }
+  /* line 23, ../sass/modules/_steps_tabs.scss */
+  .step-button:last-child {
+    border-right: none; }
+  /* line 27, ../sass/modules/_steps_tabs.scss */
+  .step-button:hover, .step-button.hover, .step-button.complete, .step-button.active {
+    font-size: 0.9em; }
+  /* line 34, ../sass/modules/_steps_tabs.scss */
+  .step-button.hover, .step-button.complete, .step-button.active {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    padding: 1em 2.5em;
+    cursor: default;
+    color: white; }
+    /* line 13, ../sass/ui_patterns/_buttons.scss */
+    .step-button.hover:hover, .step-button.complete:hover, .step-button.active:hover {
+      background: #262425;
+      color: white;
+      cursor: default; }
+    /* line 19, ../sass/ui_patterns/_buttons.scss */
+    .step-button.hover:disabled, .step-button.complete:disabled, .step-button.active:disabled {
+      cursor: default; }
+    @media screen and (min-width: 60em) {
+      /* line 34, ../sass/modules/_steps_tabs.scss */
+      .step-button.hover, .step-button.complete, .step-button.active {
+        border-top: 0.15em solid #d7551a; } }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 50, ../sass/modules/_steps_tabs.scss */
+    .step-button {
+      width: 100%; } }
+  @media screen and (min-width: 60em) {
+    /* line 50, ../sass/modules/_steps_tabs.scss */
+    .step-button {
+      width: 33.333%; } }
+
+/* line 60, ../sass/modules/_steps_tabs.scss */
+.non-investor .step-button {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: white;
+  padding: 1em 2.5em;
+  border-top: 0.15em solid transparent;
+  border-right: 0.1em solid #58595b;
+  font-size: 0.9em;
+  color: #58595b;
+  width: 50%; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .non-investor .step-button:hover {
+    background: #262425;
+    color: #58595b;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .non-investor .step-button:disabled {
+    cursor: default; }
+  /* line 23, ../sass/modules/_steps_tabs.scss */
+  .non-investor .step-button:last-child {
+    border-right: none; }
+  /* line 27, ../sass/modules/_steps_tabs.scss */
+  .non-investor .step-button:hover, .non-investor .step-button.hover, .non-investor .step-button.complete, .non-investor .step-button.active {
+    font-size: 0.9em; }
+  /* line 34, ../sass/modules/_steps_tabs.scss */
+  .non-investor .step-button.hover, .non-investor .step-button.complete, .non-investor .step-button.active {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    padding: 1em 2.5em;
+    cursor: default;
+    color: white; }
+    /* line 13, ../sass/ui_patterns/_buttons.scss */
+    .non-investor .step-button.hover:hover, .non-investor .step-button.complete:hover, .non-investor .step-button.active:hover {
+      background: #262425;
+      color: white;
+      cursor: default; }
+    /* line 19, ../sass/ui_patterns/_buttons.scss */
+    .non-investor .step-button.hover:disabled, .non-investor .step-button.complete:disabled, .non-investor .step-button.active:disabled {
+      cursor: default; }
+    @media screen and (min-width: 60em) {
+      /* line 34, ../sass/modules/_steps_tabs.scss */
+      .non-investor .step-button.hover, .non-investor .step-button.complete, .non-investor .step-button.active {
+        border-top: 0.15em solid #d7551a; } }
+
+/* line 65, ../sass/modules/_steps_tabs.scss */
+.step-status {
+  display: inline-block;
+  margin-right: 0.5em;
+  font-weight: bold; }
+
+/* line 73, ../sass/modules/_steps_tabs.scss */
+.investment-tab {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: #58595b;
+  padding: 1em 2.5em;
+  border-top: 0.15em solid transparent;
+  border-right: 0.1em solid #58595b;
+  font-size: 1em;
+  color: #58595b;
+  width: 20.4em; }
+  /* line 5, ../sass/modules/_steps_tabs.scss */
+  .investment-tab:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    padding: 1em 2.5em;
+    border-top: 0.15em solid #d7551a; }
+  /* line 23, ../sass/modules/_steps_tabs.scss */
+  .investment-tab:last-child {
+    border-right: none; }
+  /* line 27, ../sass/modules/_steps_tabs.scss */
+  .investment-tab:hover, .investment-tab.hover, .investment-tab.complete, .investment-tab.active {
+    font-size: 1em; }
+  /* line 34, ../sass/modules/_steps_tabs.scss */
+  .investment-tab.hover, .investment-tab.complete, .investment-tab.active {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    padding: 1em 2.5em;
+    cursor: default;
+    color: white; }
+    /* line 13, ../sass/ui_patterns/_buttons.scss */
+    .investment-tab.hover:hover, .investment-tab.complete:hover, .investment-tab.active:hover {
+      background: #262425;
+      color: white;
+      cursor: default; }
+    /* line 19, ../sass/ui_patterns/_buttons.scss */
+    .investment-tab.hover:disabled, .investment-tab.complete:disabled, .investment-tab.active:disabled {
+      cursor: default; }
+    @media screen and (min-width: 60em) {
+      /* line 34, ../sass/modules/_steps_tabs.scss */
+      .investment-tab.hover, .investment-tab.complete, .investment-tab.active {
+        border-top: 0.15em solid #d7551a; } }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 73, ../sass/modules/_steps_tabs.scss */
+    .investment-tab {
+      width: 100%; } }
+
+/* line 81, ../sass/modules/_steps_tabs.scss */
+.investment-tab:hover .investment-checkmark,
+.investment-tab.hover .investment-checkmark,
+.investment-tab.active .investment-checkmark {
+  background-image: url("../img/company_checkmark.png"); }
+
+/* line 87, ../sass/modules/_steps_tabs.scss */
+.investment-checkmark {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
+  background-image: url("../img/inactive_checkmark.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -0.1em 0.5em 0 0; }
+  /* line 63, ../sass/ui_patterns/_containers.scss */
+  .investment-checkmark:hover {
+    background-image: url("../img/company_checkmark.png"); }
+
+/* line 92, ../sass/modules/_steps_tabs.scss */
+.investment-briefcase {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  vertical-align: top;
+  background-image: url("../img/inactive_briefcase.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -0.1em 0.5em 0 0; }
+  /* line 63, ../sass/ui_patterns/_containers.scss */
+  .investment-briefcase:hover {
+    background-image: url("../img/company_briefcase.png"); }
+
+/* line 97, ../sass/modules/_steps_tabs.scss */
+.investment-tab:hover .investment-briefcase,
+.investment-tab.hover .investment-briefcase,
+.investment-tab.active .investment-briefcase {
+  background-image: url("../img/company_briefcase.png"); }
+
+/* line 1, ../sass/modules/_toggle.scss */
+.comment-button, .toggle-button, .accredit-toggle, label.toggle-button, label.accredit-toggle, .residency-toggle, .invest-amount-toggle, .invest-interest-form label.invest-contact-toggle {
+  border-radius: 0;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  height: auto;
+  text-align: center; }
+  /* line 6, ../sass/modules/_toggle.scss */
+  .off.comment-button, .off.toggle-button, .off.accredit-toggle, .off.residency-toggle, .off.invest-amount-toggle, .invest-interest-form label.off.invest-contact-toggle {
+    color: #58595b;
+    border: 0.1em solid #58595b; }
+  /* line 11, ../sass/modules/_toggle.scss */
+  .on.comment-button, .on.toggle-button, .on.accredit-toggle, .on.residency-toggle, .on.invest-amount-toggle, .invest-interest-form label.on.invest-contact-toggle {
+    color: white;
+    border: 0.1em solid #d7551a; }
+  /* line 16, ../sass/modules/_toggle.scss */
+  .comment-button:active, .toggle-button:active, .accredit-toggle:active, .residency-toggle:active, .invest-amount-toggle:active, .invest-interest-form label.invest-contact-toggle:active, .comment-button:focus, .toggle-button:focus, .accredit-toggle:focus, .residency-toggle:focus, .invest-amount-toggle:focus, .invest-interest-form label.invest-contact-toggle:focus {
+    outline: none; }
+  /* line 21, ../sass/modules/_toggle.scss */
+  .comment-button:hover, .toggle-button:hover, .accredit-toggle:hover, .residency-toggle:hover, .invest-amount-toggle:hover, .invest-interest-form label.invest-contact-toggle:hover, .hover.comment-button, .hover.toggle-button, .hover.accredit-toggle, .hover.residency-toggle, .hover.invest-amount-toggle, .invest-interest-form label.hover.invest-contact-toggle {
+    border-radius: 0;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    border: 0.1em solid white;
+    color: white;
+    cursor: pointer; }
+  /* line 29, ../sass/modules/_toggle.scss */
+  .on.comment-button:hover, .on.toggle-button:hover, .on.accredit-toggle:hover, .on.residency-toggle:hover, .on.invest-amount-toggle:hover, .invest-interest-form label.on.invest-contact-toggle:hover {
+    border: 0.1em solid #d7551a; }
+
+/* line 34, ../sass/modules/_toggle.scss */
+.toggle-button, .accredit-toggle {
+  width: 10em; }
+
+/* line 57, ../sass/modules/_toggle.scss */
+label.toggle-button, label.accredit-toggle {
+  margin-right: 0.2em;
+  padding: 1em 2em;
+  width: auto; }
+  /* line 47, ../sass/modules/_toggle.scss */
+  label.toggle-button:hover, label.accredit-toggle:hover {
+    padding: 1em 2em;
+    width: auto; }
+  /* line 52, ../sass/modules/_toggle.scss */
+  label.toggle-button:last-child, label.accredit-toggle:last-child {
+    margin-right: 0; }
+
+/* line 61, ../sass/modules/_toggle.scss */
+label.toggle-button p, label.accredit-toggle p {
+  margin-bottom: 2em;
+  font-size: 1.1em; }
+
+/* line 66, ../sass/modules/_toggle.scss */
+label.toggle-button span, label.accredit-toggle span {
+  font-size: 0.95em; }
+
+/* line 70, ../sass/modules/_toggle.scss */
+label.toggle-button li, label.accredit-toggle li {
+  margin-top: 0.5em;
+  font-size: 0.9em; }
+
+/* line 10, ../sass/modules/_avatars.scss */
+.avatar.small {
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 0.7em;
+  line-height: 2.85; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.small:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.small:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 14, ../sass/modules/_avatars.scss */
+.avatar.medium {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 1em;
+  line-height: 2.25; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.medium:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.medium:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 18, ../sass/modules/_avatars.scss */
+.avatar.large {
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 2.5em;
+  height: 2.5em;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 2em;
+  line-height: 2.35;
+  vertical-align: top; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.large:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.large:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 24, ../sass/modules/_avatars.scss */
+.avatar.x-large {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  border-radius: 50%;
+  vertical-align: middle;
+  text-align: center;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #3c3a3b;
+  background-color: #3c3a3b;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-size: 4em;
+  line-height: 2.35;
+  border: none;
+  background-color: #333333; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.x-large:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .avatar.x-large:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 1, ../sass/modules/_tooltip.scss */
+.tooltip-container {
+  position: relative;
+  display: inline-block; }
+
+/* line 25, ../sass/modules/_tooltip.scss */
+.tooltip-top:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border: solid;
+  bottom: -0.75em;
+  right: 20%;
+  border-color: white transparent;
+  border-width: 1em 0.6em 0 0.6em; }
+
+/* line 25, ../sass/modules/_tooltip.scss */
+.investor-tooltip:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  border: solid;
+  bottom: 40%;
+  right: -0.9em;
+  border-color: transparent white;
+  border-width: 0.6em 0em 0.6em 1em; }
+
+/* line 53, ../sass/modules/_tooltip.scss */
+.tooltip-trigger {
+  display: inline-block; }
+  /* line 48, ../sass/modules/_tooltip.scss */
+  .tooltip-trigger:hover + .tooltip-top {
+    display: block; }
+
+/* line 57, ../sass/modules/_tooltip.scss */
+.tooltip-top {
+  border-top: 0.2em solid #d7551a;
+  position: absolute;
+  display: none;
+  bottom: 3em;
+  left: -9.5em;
+  width: 13.25em;
+  padding: 1.25em;
+  background: white;
+  color: black;
+  text-align: center;
+  z-index: 1; }
+  /* line 19, ../sass/modules/_tooltip.scss */
+  .tooltip-top:hover {
+    display: block; }
+
+/* line 64, ../sass/modules/_tooltip.scss */
+.investor-tooltip {
+  border-top: 0.2em solid #d7551a;
+  position: absolute;
+  display: none;
+  bottom: -5em;
+  left: -14.5em;
+  width: 13.25em;
+  padding: 1.25em;
+  background: white;
+  color: black;
+  text-align: center; }
+  /* line 19, ../sass/modules/_tooltip.scss */
+  .investor-tooltip:hover {
+    display: block; }
+
+/* line 69, ../sass/modules/_tooltip.scss */
+.tooltip-title {
+  text-transform: uppercase;
+  margin: 0.3125em 0 0.625em;
+  word-wrap: break-word; }
+
+/* line 76, ../sass/modules/_tooltip.scss */
+.company-investment-status-section img.tooltip-trigger {
+  position: relative;
+  top: 8px; }
+
+/* import app layouts */
+/* line 1, ../sass/layouts/_main.scss */
+.content-wrapper {
+  display: block;
+  background-color: #262425; }
+
+/* line 5, ../sass/layouts/_main.scss */
+.container, .nav-container, .footer-container, .main-container {
+  max-width: 63.75em;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .container:after, .nav-container:after, .footer-container:after, .main-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 10, ../sass/layouts/_main.scss */
+.main-container {
+  background: #3c3a3b;
+  padding-top: 1.875em; }
+
+/* line 1, ../sass/layouts/_onboarding.scss */
+.onboarding-container {
+  display: block;
+  background-color: #262425;
+  float: none;
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .onboarding-container:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 1, ../sass/layouts/_onboarding.scss */
+    .onboarding-container {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-right: 0; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
+      .onboarding-container:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 60em) {
+    /* line 1, ../sass/layouts/_onboarding.scss */
+    .onboarding-container {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
+      .onboarding-container:last-child {
+        margin-right: 0; } }
+
+/* line 15, ../sass/bourbon/addons/_clearfix.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 16, ../sass/layouts/_onboarding.scss */
+.onboarding-container:after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/* line 31, ../sass/layouts/_onboarding.scss */
+.onboarding-title {
+  margin: 1.5em 0 1em;
+  text-transform: uppercase; }
+
+/* line 35, ../sass/layouts/_onboarding.scss */
+.onboarding-description-section {
+  text-align: left; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 35, ../sass/layouts/_onboarding.scss */
+    .onboarding-description-section {
+      padding: 0 2.5em; } }
+  @media screen and (min-width: 60em) {
+    /* line 35, ../sass/layouts/_onboarding.scss */
+    .onboarding-description-section {
+      padding: 0 3.75em; } }
+  /* line 43, ../sass/layouts/_onboarding.scss */
+  .onboarding-description-section p {
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+    text-align: center; }
+    /* line 46, ../sass/layouts/_onboarding.scss */
+    .onboarding-description-section p a {
+      color: white;
+      text-decoration: underline; }
+
+@media screen and (min-width: 60em) {
+  /* line 52, ../sass/layouts/_onboarding.scss */
+  .onboarding-form-section {
+    padding: 0 3.75em 3.75em 3.75em; } }
+/* line 56, ../sass/layouts/_onboarding.scss */
+.onboarding-form-section p {
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 60, ../sass/layouts/_onboarding.scss */
+.auth-section-break {
+  height: 1px;
+  background-color: #929292;
+  text-align: center;
+  margin: 3.75em 0; }
+  /* line 65, ../sass/layouts/_onboarding.scss */
+  .auth-section-break span {
+    color: white;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 70, ../sass/layouts/_onboarding.scss */
+.auth-section-break span {
+  position: relative;
+  top: -0.75em;
+  background: #262425;
+  padding: 0 2em; }
+
+/* line 76, ../sass/layouts/_onboarding.scss */
+.verify-button, .accredit-button, .create-button, .auth-button {
+  text-transform: uppercase; }
+
+/* line 80, ../sass/layouts/_onboarding.scss */
+.create-account-field, .auth-field {
+  margin-bottom: 1.25em; }
+
+/* line 84, ../sass/layouts/_onboarding.scss */
+.verify-padding {
+  /* this mixin provides padding at the bottom of content
+     to provide consistent heights while preserving sticky footer */ }
+  @media screen and (min-width: 60em) {
+    /* line 84, ../sass/layouts/_onboarding.scss */
+    .verify-padding {
+      width: 100%;
+      height: 20em; } }
+
+/* line 87, ../sass/layouts/_onboarding.scss */
+.verify-description {
+  margin-bottom: 40px; }
+
+/* line 96, ../sass/layouts/_onboarding.scss */
+.verify-row {
+  text-align: left; }
+  @media screen and (min-width: 60em) {
+    /* line 96, ../sass/layouts/_onboarding.scss */
+    .verify-row {
+      margin-bottom: 1.25em;
+      width: 60%; } }
+  @media screen and (min-width: 60em) {
+    /* line 96, ../sass/layouts/_onboarding.scss */
+    .verify-row {
+      margin-left: 20%; } }
+  /* line 102, ../sass/layouts/_onboarding.scss */
+  .verify-row #phonenumber {
+    margin-left: 23px;
+    padding: 0; }
+    @media screen and (min-width: 60em) {
+      /* line 102, ../sass/layouts/_onboarding.scss */
+      .verify-row #phonenumber {
+        width: 57%; } }
+    @media screen and (min-width: 13.75em) and (max-width: 60em) {
+      /* line 102, ../sass/layouts/_onboarding.scss */
+      .verify-row #phonenumber {
+        width: 48%; } }
+
+@media screen and (min-width: 60em) {
+  /* line 113, ../sass/layouts/_onboarding.scss */
+  .verify-confirm-row {
+    margin-bottom: 1.25em;
+    width: auto; } }
+
+/* line 116, ../sass/layouts/_onboarding.scss */
+.verify-text {
+  display: inline-block;
+  margin-left: 2em;
+  color: white;
+  max-width: 57%; }
+
+/* line 123, ../sass/layouts/_onboarding.scss */
+.verify-confirm-row .checkbox-text {
+  margin-left: 0;
+  font-size: 12px; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 123, ../sass/layouts/_onboarding.scss */
+    .verify-confirm-row .checkbox-text {
+      margin-left: .2em; } }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 130, ../sass/layouts/_onboarding.scss */
+  .verify-confirm-row .checkbox-label {
+    display: inline-block;
+    font-size: 12px; } }
+
+/* line 139, ../sass/layouts/_onboarding.scss */
+.verify-button {
+  margin-top: 10px; }
+
+/* line 144, ../sass/layouts/_onboarding.scss */
+.accredit-path-row {
+  margin: 1.25em 0; }
+
+/* line 147, ../sass/layouts/_onboarding.scss */
+.accredit-description {
+  margin-bottom: 2.5em;
+  padding-top: 15px; }
+
+/* line 151, ../sass/layouts/_onboarding.scss */
+.accredit-form-title {
+  margin-bottom: 1.875em;
+  text-align: left; }
+
+/* line 155, ../sass/layouts/_onboarding.scss */
+.accredit-residency-title {
+  margin: 1.25em 0;
+  text-align: center; }
+
+/* line 159, ../sass/layouts/_onboarding.scss */
+.accredit-form {
+  text-align: left; }
+
+/* line 162, ../sass/layouts/_onboarding.scss */
+.accredit-toggle {
+  margin-right: 0.6em; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 162, ../sass/layouts/_onboarding.scss */
+    .accredit-toggle {
+      width: 100% !important; } }
+  @media screen and (min-width: 60em) {
+    /* line 162, ../sass/layouts/_onboarding.scss */
+    .accredit-toggle {
+      width: auto !important; } }
+  /* line 171, ../sass/layouts/_onboarding.scss */
+  .accredit-toggle:last-child {
+    margin-right: 0; }
+
+/* line 175, ../sass/layouts/_onboarding.scss */
+.accredit-residency-row {
+  margin-bottom: 2.5em; }
+
+/* line 178, ../sass/layouts/_onboarding.scss */
+.residency-toggle {
+  margin-right: 0.2em;
+  padding: 1em 2em;
+  width: 16.4em; }
+  /* line 47, ../sass/modules/_toggle.scss */
+  .residency-toggle:hover {
+    padding: 1em 2em;
+    width: 16.4em; }
+  /* line 52, ../sass/modules/_toggle.scss */
+  .residency-toggle:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 178, ../sass/layouts/_onboarding.scss */
+    .residency-toggle {
+      width: 100%; } }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 185, ../sass/layouts/_onboarding.scss */
+  .residency-toggle:hover {
+    width: 100%; } }
+
+/* line 190, ../sass/layouts/_onboarding.scss */
+.accredit-disable-row {
+  margin: 1.25em 0;
+  text-align: left; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 190, ../sass/layouts/_onboarding.scss */
+    .accredit-disable-row {
+      text-align: center; } }
+  /* line 196, ../sass/layouts/_onboarding.scss */
+  .accredit-disable-row .checkbox-text {
+    margin-left: 0; }
+    @media screen and (min-width: 13.75em) and (max-width: 60em) {
+      /* line 196, ../sass/layouts/_onboarding.scss */
+      .accredit-disable-row .checkbox-text {
+        font-size: 12px; } }
+  /* line 203, ../sass/layouts/_onboarding.scss */
+  .accredit-disable-row .checkbox-label {
+    margin-right: 8px; }
+
+/* line 207, ../sass/layouts/_onboarding.scss */
+.accredit-button-row {
+  text-align: center; }
+
+/* line 213, ../sass/layouts/_onboarding.scss */
+.accredit-padding {
+  /* this mixin provides padding at the bottom of content
+     to provide consistent heights while preserving sticky footer */ }
+  @media screen and (min-width: 60em) {
+    /* line 213, ../sass/layouts/_onboarding.scss */
+    .accredit-padding {
+      width: 100%;
+      height: 10em; } }
+
+/* line 217, ../sass/layouts/_onboarding.scss */
+.social-register {
+  margin-top: 2.5em; }
+
+/* line 220, ../sass/layouts/_onboarding.scss */
+.email-register-text {
+  color: white;
+  margin-bottom: 2.5em;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-weight: 600; }
+  /* line 225, ../sass/layouts/_onboarding.scss */
+  .email-register-text a {
+    color: white;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+    font-weight: 600;
+    text-decoration: underline; }
+    /* line 230, ../sass/layouts/_onboarding.scss */
+    .email-register-text a:hover {
+      color: white;
+      text-decoration: underline; }
+
+/* line 236, ../sass/layouts/_onboarding.scss */
+.email-auth-toggle {
+  cursor: pointer;
+  color: #929292;
+  font-size: 1em;
+  text-decoration: underline; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .email-auth-toggle:hover, .email-auth-toggle:focus, .email-auth-toggle:active {
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-decoration: underline; }
+
+/* line 239, ../sass/layouts/_onboarding.scss */
+.create-account-field {
+  width: 310px;
+  margin-bottom: 0;
+  margin-left: calc(50% - 205px); }
+  /* line 244, ../sass/layouts/_onboarding.scss */
+  .create-account-field label {
+    margin-top: 6px;
+    width: 90px;
+    float: left;
+    padding-top: 12px;
+    padding-right: 12px;
+    text-align: right;
+    display: inline-block; }
+  /* line 253, ../sass/layouts/_onboarding.scss */
+  .create-account-field input {
+    width: 210px;
+    display: inline-block; }
+
+/* line 260, ../sass/layouts/_onboarding.scss */
+.create-button {
+  margin-top: 2.5em; }
+
+/* line 264, ../sass/layouts/_onboarding.scss */
+.create-account-padding {
+  /* this mixin provides padding at the bottom of content
+     to provide consistent heights while preserving sticky footer */ }
+  @media screen and (min-width: 60em) {
+    /* line 264, ../sass/layouts/_onboarding.scss */
+    .create-account-padding {
+      width: 100%;
+      height: 20em; } }
+
+/* line 268, ../sass/layouts/_onboarding.scss */
+.auth-header {
+  border-top: 0.15em solid #d7551a; }
+
+/* line 277, ../sass/layouts/_onboarding.scss */
+.login-padding {
+  /* this mixin provides padding at the bottom of content
+     to provide consistent heights while preserving sticky footer */ }
+  @media screen and (min-width: 60em) {
+    /* line 277, ../sass/layouts/_onboarding.scss */
+    .login-padding {
+      width: 100%;
+      height: 20em; } }
+
+/* line 280, ../sass/layouts/_onboarding.scss */
+.auth-padding {
+  /* this mixin provides padding at the bottom of content
+     to provide consistent heights while preserving sticky footer */ }
+  @media screen and (min-width: 60em) {
+    /* line 280, ../sass/layouts/_onboarding.scss */
+    .auth-padding {
+      width: 100%;
+      height: 20em; } }
+
+/* line 285, ../sass/layouts/_onboarding.scss */
+.new-password-form .create-account-field {
+  width: 427px;
+  margin-left: 0px; }
+  /* line 288, ../sass/layouts/_onboarding.scss */
+  .new-password-form .create-account-field label {
+    width: 217px; }
+/* line 293, ../sass/layouts/_onboarding.scss */
+.new-password-form .auth-button {
+  margin-top: 24px; }
+
+/* line 299, ../sass/layouts/_onboarding.scss */
+.login-form a {
+  color: #e1e1e1;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 12px; }
+
+/* line 306, ../sass/layouts/_onboarding.scss */
+.onboarding-modal {
+  top: 35% !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-top: 2px solid #d7551a;
+  width: 600px;
+  padding: 40px 32px  0px 32px  !important;
+  min-height: 420px;
+  z-index: 99; }
+
+/* line 316, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-title {
+  font-size: 18px;
+  margin-bottom: 24px; }
+
+/* line 320, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-description {
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left; }
+  /* line 325, ../sass/layouts/_onboarding.scss */
+  .onboarding-modal-description ul {
+    padding-left: 24px; }
+
+/* line 329, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0%;
+  height: 36px;
+  width: 100%;
+  padding: 0px 24px; }
+
+/* line 337, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-backbutton {
+  float: left;
+  color: #3a3939;
+  font-size: 12pt;
+  cursor: pointer;
+  font-weight: 500; }
+
+/* line 344, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-nextbutton, .onboarding-modal-finish {
+  float: right;
+  font-size: 12pt;
+  font-weight: 500;
+  cursor: pointer; }
+
+/* line 350, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-page-indicator-container {
+  position: absolute;
+  bottom: 6px;
+  left: 268px;
+  padding: 0px 24px;
+  margin: 0 auto; }
+
+/* line 357, ../sass/layouts/_onboarding.scss */
+.dot {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: black;
+  height: 6px;
+  width: 6px;
+  margin-right: 5px;
+  margin-bottom: 4px; }
+
+/* line 366, ../sass/layouts/_onboarding.scss */
+.active-page {
+  background-color: #d7551a; }
+
+/* line 369, ../sass/layouts/_onboarding.scss */
+.blocker {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+/* line 372, ../sass/layouts/_onboarding.scss */
+.onboarding-modal-company-text {
+  text-transform: capital;
+  font-size: 9pt; }
+
+/* line 377, ../sass/layouts/_onboarding.scss */
+a.sec-link {
+  text-align: center;
+  color: #58595b;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 12px; }
+
+/* line 387, ../sass/layouts/_onboarding.scss */
+.is_accredited-row label {
+  width: 168px;
+  min-height: 170px;
+  max-width: 168px;
+  max-height: 170px;
+  vertical-align: top;
+  padding-left: 5px;
+  padding-right: 5px;
+  word-wrap: normal; }
+/* line 398, ../sass/layouts/_onboarding.scss */
+.is_accredited-row p {
+  margin-bottom: 10px !important; }
+/* line 403, ../sass/layouts/_onboarding.scss */
+.is_accredited-row ul {
+  margin-top: 25px;
+  list-style-type: none; }
+  /* line 406, ../sass/layouts/_onboarding.scss */
+  .is_accredited-row ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center; }
+/* line 416, ../sass/layouts/_onboarding.scss */
+.is_accredited-row:hover label {
+  width: 168px;
+  min-height: 170px;
+  max-width: 168px;
+  max-height: 170px;
+  vertical-align: top;
+  padding-left: 5px;
+  padding-right: 5px;
+  word-wrap: normal; }
+/* line 427, ../sass/layouts/_onboarding.scss */
+.is_accredited-row:hover p {
+  margin-bottom: 10px; }
+/* line 431, ../sass/layouts/_onboarding.scss */
+.is_accredited-row:hover ul {
+  list-style-type: none; }
+  /* line 434, ../sass/layouts/_onboarding.scss */
+  .is_accredited-row:hover ul li {
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-align: center; }
+
+@media screen and (min-width: 60em) {
+  /* line 1, ../sass/layouts/_company_gallery.scss */
+  .company-gallery-wrapper {
+    padding: 0 1.25em; } }
+
+/* line 7, ../sass/layouts/_company_gallery.scss */
+.investment-subnav {
+  margin-bottom: 1.25em; }
+
+/* line 11, ../sass/layouts/_company_gallery.scss */
+.company-gallery-container {
+  overflow: hidden;
+  margin-bottom: 2.5em;
+  display: none;
+  margin-left: 3px; }
+
+/* line 18, ../sass/layouts/_company_gallery.scss */
+.company-gallery-link {
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  text-decoration: none; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .company-gallery-link:hover, .company-gallery-link:focus, .company-gallery-link:active {
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-decoration: none; }
+
+/* line 22, ../sass/layouts/_company_gallery.scss */
+.company-gallery-tile {
+  height: 300px;
+  border: 2px solid #3c3a3b; }
+  /* line 52, ../sass/neat/grid/_omega.scss */
+  .company-gallery-tile:nth-child(n) {
+    margin-right: 0; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 22, ../sass/layouts/_company_gallery.scss */
+    .company-gallery-tile {
+      margin-left: 10px; } }
+
+/* line 32, ../sass/layouts/_company_gallery.scss */
+.company-gallery-tile:hover {
+  border: 2px solid #d7551a; }
+
+/* line 36, ../sass/layouts/_company_gallery.scss */
+.company-tile-sizer,
+.company-gallery-tile.quarter {
+  width: 233px; }
+
+@media screen and (min-width: 60em) {
+  /* line 41, ../sass/layouts/_company_gallery.scss */
+  .company-gallery-tile.half {
+    width: 484px; } }
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 41, ../sass/layouts/_company_gallery.scss */
+  .company-gallery-tile.half {
+    width: 300px; } }
+
+/* line 50, ../sass/layouts/_company_gallery.scss */
+.company-tile-gutter {
+  width: 12px; }
+
+/* line 54, ../sass/layouts/_company_gallery.scss */
+.company-tile-background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+/* line 63, ../sass/layouts/_company_gallery.scss */
+.company-tile-background {
+  position: absolute;
+  height: 110%;
+  width: 110%;
+  top: -5%;
+  right: -5%;
+  bottom: -5%;
+  left: -5%;
+  background: #262425;
+  background-size: cover;
+  background-position: center; }
+
+/* line 76, ../sass/layouts/_company_gallery.scss */
+.company-tile-background.watchlist {
+  -webkit-filter: grayscale(1) blur(4px);
+  filter: grayscale(1) blur(4px); }
+
+/* line 80, ../sass/layouts/_company_gallery.scss */
+.company-tile-background.portfolio {
+  -webkit-filter: blur(4px);
+  filter: blur(4px); }
+
+/* line 84, ../sass/layouts/_company_gallery.scss */
+.company-tile-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+/* line 93, ../sass/layouts/_company_gallery.scss */
+.company-tile-content.watchlist,
+.company-tile-content.portfolio {
+  background-image: url("../img/company_briefcase_background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: center 45px; }
+
+/* line 108, ../sass/layouts/_company_gallery.scss */
+.company-tile-icon {
+  position: absolute;
+  height: 2em;
+  width: 2em;
+  top: 3%;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #363636;
+  right: 3%; }
+
+/* line 113, ../sass/layouts/_company_gallery.scss */
+.company-tile-content.investments .company-tile-icon {
+  background-image: url("../img/company_checkmark.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/* line 117, ../sass/layouts/_company_gallery.scss */
+.company-tile-content.portfolio .company-tile-icon {
+  background-image: url("../img/company_briefcase.png");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+/* line 121, ../sass/layouts/_company_gallery.scss */
+.company-tile-name {
+  font-weight: 500;
+  font-size: 20pt;
+  letter-spacing: 1px; }
+
+/* line 128, ../sass/layouts/_company_gallery.scss */
+.company-tile-location {
+  font-size: 11pt;
+  font-family: "Helvetica";
+  font-weight: 400; }
+
+/* line 135, ../sass/layouts/_company_gallery.scss */
+.company-tile-content .category-tag {
+  margin-top: 16em; }
+
+/* line 139, ../sass/layouts/_company_gallery.scss */
+.company-tile-investment {
+  font-family: "futura-pt";
+  font-weight: 600;
+  font-size: 12pt;
+  display: none;
+  text-shadow: 0px 0px 5px #363636; }
+
+/* line 147, ../sass/layouts/_company_gallery.scss */
+.company-tile-content.investments .company-tile-investment {
+  display: block;
+  -webkit-text-stroke-width: 0.1px; }
+
+/* line 152, ../sass/layouts/_company_gallery.scss */
+.company-info-block {
+  position: absolute;
+  height: 8%;
+  width: 100%;
+  top: 22%;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 5px #363636; }
+
+/* line 155, ../sass/layouts/_company_gallery.scss */
+.privacy-modal {
+  top: 35% !important;
+  display: block;
+  background-color: #262425;
+  float: none;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  display: none;
+  padding: 2em 3em 3em;
+  box-shadow: 0 0 1em black;
+  border-radius: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  min-height: 420px;
+  width: 400px; }
+
+/* line 163, ../sass/layouts/_company_gallery.scss */
+.blocker {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+/* line 166, ../sass/layouts/_company_gallery.scss */
+.privacy-modal-close {
+  position: absolute;
+  left: 145px;
+  font-size: 12pt;
+  cursor: pointer;
+  font-weight: 500;
+  bottom: 10%;
+  border-bottom: solid 1px #d7551a; }
+
+/* line 175, ../sass/layouts/_company_gallery.scss */
+.privacy-modal-title {
+  font-size: 18px;
+  margin-bottom: 24px; }
+
+/* line 179, ../sass/layouts/_company_gallery.scss */
+.privacy-modal-description {
+  font-family: "futura-pt", "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  font-size: 10pt;
+  font-weight: 400;
+  text-align: left; }
+
+/* line 185, ../sass/layouts/_company_gallery.scss */
+.privacy-modal-emphasis {
+  font-size: 9pt; }
+
+/* line 1, ../sass/layouts/_company_detail.scss */
+.company-detail-wrapper {
+  color: #e1e1e1;
+  padding-bottom: 10em; }
+  /* line 5, ../sass/layouts/_company_detail.scss */
+  .company-detail-wrapper p {
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 0.9em;
+    word-spacing: 0.1em;
+    color: #e1e1e1;
+    word-wrap: break-word; }
+  /* line 13, ../sass/layouts/_company_detail.scss */
+  .company-detail-wrapper ul {
+    list-style-type: circle;
+    margin: 0;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    word-spacing: 0.1em;
+    color: #e1e1e1;
+    padding-left: 10px; }
+    /* line 22, ../sass/layouts/_company_detail.scss */
+    .company-detail-wrapper ul li {
+      font-size: 14px;
+      word-spacing: 0.1em;
+      list-style-type: disc; }
+
+/* line 30, ../sass/layouts/_company_detail.scss */
+.company-detail-left-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0;
+  margin-right: 0.625em;
+  margin-bottom: 2.5em;
+  padding-left: 2.5298%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .company-detail-left-container:last-child {
+    margin-right: 0; }
+
+/* line 38, ../sass/layouts/_company_detail.scss */
+.company-detail-right-container {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  padding-right: 10px;
+  margin-right: 0; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .company-detail-right-container:last-child {
+    margin-right: 0; }
+  /* line 42, ../sass/layouts/_company_detail.scss */
+  .company-detail-right-container .tooltip-text {
+    color: #242223;
+    word-wrap: break-word;
+    font-weight: 100; }
+
+/* line 48, ../sass/layouts/_company_detail.scss */
+.company-section-header {
+  margin-bottom: 1.25em;
+  display: block;
+  height: 45px;
+  margin-bottom: 11px; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .company-section-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 56, ../sass/layouts/_company_detail.scss */
+.company-tab {
+  border-radius: 0;
+  outline: none;
+  background-color: #262425;
+  color: #58595b;
+  padding: 1em 2.5em;
+  border-top: 0.15em solid transparent;
+  border-right: 0.1em solid #58595b;
+  font-size: 1em;
+  color: #58595b;
+  width: 11.35em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%;
+  width: 25%;
+  margin-right: 0px;
+  font-size: 12pt;
+  font-weight: 500; }
+  /* line 5, ../sass/modules/_steps_tabs.scss */
+  .company-tab:hover {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    padding: 1em 2.5em;
+    border-top: 0.15em solid #d7551a; }
+  /* line 23, ../sass/modules/_steps_tabs.scss */
+  .company-tab:last-child {
+    border-right: none; }
+  /* line 27, ../sass/modules/_steps_tabs.scss */
+  .company-tab:hover, .company-tab.hover, .company-tab.complete, .company-tab.active {
+    font-size: 1em; }
+  /* line 34, ../sass/modules/_steps_tabs.scss */
+  .company-tab.hover, .company-tab.complete, .company-tab.active {
+    border-radius: 0;
+    outline: none;
+    background-color: #262425;
+    color: white;
+    padding: 1em 2.5em;
+    cursor: default;
+    color: white; }
+    /* line 13, ../sass/ui_patterns/_buttons.scss */
+    .company-tab.hover:hover, .company-tab.complete:hover, .company-tab.active:hover {
+      background: #262425;
+      color: white;
+      cursor: default; }
+    /* line 19, ../sass/ui_patterns/_buttons.scss */
+    .company-tab.hover:disabled, .company-tab.complete:disabled, .company-tab.active:disabled {
+      cursor: default; }
+    @media screen and (min-width: 60em) {
+      /* line 34, ../sass/modules/_steps_tabs.scss */
+      .company-tab.hover, .company-tab.complete, .company-tab.active {
+        border-top: 0.15em solid #d7551a; } }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .company-tab:last-child {
+    margin-right: 0; }
+
+/* line 70, ../sass/layouts/_company_detail.scss */
+.company-detail-logo {
+  display: inline-block;
+  width: 20%;
+  height: 0;
+  padding-bottom: 20%;
+  border: 0 solid transparent;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover; }
+
+/* line 75, ../sass/layouts/_company_detail.scss */
+.company-overview-details {
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+  margin-left: 1.25em; }
+
+/* line 81, ../sass/layouts/_company_detail.scss */
+.company-detail-name {
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px; }
+
+/* line 87, ../sass/layouts/_company_detail.scss */
+.company-detail-title {
+  display: inline-block;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  min-width: 107px;
+  color: white; }
+
+/* line 95, ../sass/layouts/_company_detail.scss */
+.company-detail-location {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 10pt;
+  letter-spacing: 1px;
+  padding: 3px 0px; }
+
+/* line 110, ../sass/layouts/_company_detail.scss */
+.company-detail-founding {
+  color: #58595b;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 500;
+  font-weight: 500;
+  font-size: 8pt;
+  padding: 3px 0px; }
+
+/* line 117, ../sass/layouts/_company_detail.scss */
+.company-links-container a.social-link {
+  position: relative;
+  bottom: 1px; }
+/* line 122, ../sass/layouts/_company_detail.scss */
+.company-links-container a.company-webpage-link {
+  font-size: 10pt; }
+  /* line 124, ../sass/layouts/_company_detail.scss */
+  .company-links-container a.company-webpage-link:hover {
+    color: white;
+    font-size: 10pt; }
+
+/* line 131, ../sass/layouts/_company_detail.scss */
+.company-webpage-link {
+  font-style: italic;
+  cursor: pointer;
+  color: #58595b;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 0.625em;
+  font-size: 10pt; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .company-webpage-link:hover, .company-webpage-link:focus, .company-webpage-link:active {
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-decoration: none; }
+
+/* line 97, ../sass/modules/_social.scss */
+.company-links-container .linkedin-icon,
+.company-links-container .facebook-icon,
+.company-links-container .twitter-icon {
+  cursor: pointer;
+  color: #58595b;
+  font-size: 0.9em;
+  text-decoration: none;
+  vertical-align: middle;
+  margin-top: 0em; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .company-links-container .linkedin-icon:hover, .company-links-container .linkedin-icon:focus, .company-links-container .linkedin-icon:active,
+  .company-links-container .facebook-icon:hover,
+  .company-links-container .facebook-icon:focus,
+  .company-links-container .facebook-icon:active,
+  .company-links-container .twitter-icon:hover,
+  .company-links-container .twitter-icon:focus,
+  .company-links-container .twitter-icon:active {
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none; }
+
+/* line 142, ../sass/layouts/_company_detail.scss */
+.company-detail-bio {
+  margin-top: 1.25em; }
+
+/* line 146, ../sass/layouts/_company_detail.scss */
+.product-carousel-section, .company-problem, .company-solution, .company-business-content, .company-employees-content-section, .company-finance-content, .company-testimonial-content-section, .company-press-content-section, .company-investment-status-section, .company-investment-summary-section, .company-current-investors-section, .investment-details-content, .company-question-form-section, .company-active-questions-section, .company-dealroom-documents-section {
+  background: #262425;
+  margin-top: 1.25em;
+  padding: 1.25em; }
+  /* line 150, ../sass/layouts/_company_detail.scss */
+  .product-carousel-section p, .company-problem p, .company-solution p, .company-business-content p, .company-employees-content-section p, .company-finance-content p, .company-testimonial-content-section p, .company-press-content-section p, .company-investment-status-section p, .company-investment-summary-section p, .company-current-investors-section p, .investment-details-content p, .company-question-form-section p, .company-active-questions-section p, .company-dealroom-documents-section p {
+    margin: 0px; }
+
+/* line 155, ../sass/layouts/_company_detail.scss */
+.problem-solution-section {
+  overflow: auto; }
+
+/* line 169, ../sass/layouts/_company_detail.scss */
+.company-problem {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 400px;
+  margin-top: 10px;
+  overflow: hidden; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .company-problem:last-child {
+    margin-right: 0; }
+
+/* line 176, ../sass/layouts/_company_detail.scss */
+.company-solution {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%;
+  height: 400px;
+  margin-top: 10px;
+  overflow: hidden; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .company-solution:last-child {
+    margin-right: 0; }
+
+/* line 186, ../sass/layouts/_company_detail.scss */
+.company-business-content-section p a {
+  text-decoration: underline; }
+
+/* line 192, ../sass/layouts/_company_detail.scss */
+.company-business-content {
+  margin-top: 10px; }
+  /* line 195, ../sass/layouts/_company_detail.scss */
+  .company-business-content a {
+    color: #d7551a; }
+
+/* line 200, ../sass/layouts/_company_detail.scss */
+.business-content-carousel {
+  margin-bottom: 1.25em; }
+
+/* line 211, ../sass/layouts/_company_detail.scss */
+.company-employees-content-section {
+  margin-top: 10px; }
+
+/* line 215, ../sass/layouts/_company_detail.scss */
+.company-employee {
+  margin-top: 20px; }
+
+/* line 218, ../sass/layouts/_company_detail.scss */
+.company-employee-details {
+  display: inline-block;
+  width: 80%;
+  margin-left: 1.25em; }
+  /* line 97, ../sass/modules/_social.scss */
+  .company-employee-details .linkedin-icon,
+  .company-employee-details .facebook-icon,
+  .company-employee-details .twitter-icon {
+    cursor: pointer;
+    color: #58595b;
+    font-size: 0.8em;
+    text-decoration: none;
+    vertical-align: top;
+    margin-top: 0.15em; }
+    /* line 7, ../sass/ui_patterns/_links.scss */
+    .company-employee-details .linkedin-icon:hover, .company-employee-details .linkedin-icon:focus, .company-employee-details .linkedin-icon:active,
+    .company-employee-details .facebook-icon:hover,
+    .company-employee-details .facebook-icon:focus,
+    .company-employee-details .facebook-icon:active,
+    .company-employee-details .twitter-icon:hover,
+    .company-employee-details .twitter-icon:focus,
+    .company-employee-details .twitter-icon:active {
+      cursor: pointer;
+      color: white;
+      font-size: 0.8em;
+      text-decoration: none; }
+
+/* line 226, ../sass/layouts/_company_detail.scss */
+.company-employee-name {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-right: 7px; }
+
+/* line 231, ../sass/layouts/_company_detail.scss */
+.company-employee-title {
+  color: #58595b;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 500; }
+
+/* line 234, ../sass/layouts/_company_detail.scss */
+.company-employee-bio {
+  height: 60px;
+  overflow: hidden; }
+
+/* line 238, ../sass/layouts/_company_detail.scss */
+.company-employee-bio p {
+  height: 100%;
+  width: 485px;
+  font-size: 14px !important;
+  /* This will do elipsises, but only to a single line */
+  /* width: 250px; */
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */ }
+
+/* line 249, ../sass/layouts/_company_detail.scss */
+.company-finance-content-section {
+  margin-top: 10px; }
+  /* line 252, ../sass/layouts/_company_detail.scss */
+  .company-finance-content-section a {
+    color: #d7551a; }
+
+/* line 256, ../sass/layouts/_company_detail.scss */
+.company-finance-content {
+  margin-top: 10px; }
+
+/* line 263, ../sass/layouts/_company_detail.scss */
+.company-finance-gutter {
+  width: 17.2px; }
+
+/* line 266, ../sass/layouts/_company_detail.scss */
+.company-testimonial-content-section {
+  margin-top: 10px; }
+
+/* line 272, ../sass/layouts/_company_detail.scss */
+.company-testimonial-quote {
+  font-size: 1.1em;
+  margin-bottom: 0; }
+
+/* line 276, ../sass/layouts/_company_detail.scss */
+.company-testimonial-source {
+  color: #58595b;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: 500; }
+
+/* line 280, ../sass/layouts/_company_detail.scss */
+.company-press-content-section {
+  overflow: auto; }
+
+/* line 285, ../sass/layouts/_company_detail.scss */
+.company-press-content {
+  overflow: auto; }
+
+/* line 289, ../sass/layouts/_company_detail.scss */
+.press-content-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 14.70196%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .press-content-left:last-child {
+    margin-right: 0; }
+
+/* line 293, ../sass/layouts/_company_detail.scss */
+.press-content-right {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .press-content-right:last-child {
+    margin-right: 0; }
+
+/* line 298, ../sass/layouts/_company_detail.scss */
+.press-publish-date {
+  color: #58595b;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 500;
+  font-size: .8em;
+  color: #58595b; }
+
+/* line 305, ../sass/layouts/_company_detail.scss */
+.company-press-link {
+  cursor: pointer;
+  color: #58595b;
+  font-size: 0.9em;
+  text-decoration: none;
+  vertical-align: top;
+  text-transform: uppercase; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .company-press-link:hover, .company-press-link:focus, .company-press-link:active {
+    cursor: pointer;
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none; }
+
+/* line 312, ../sass/layouts/_company_detail.scss */
+.company-press-title {
+  text-transform: uppercase;
+  color: white; }
+
+/* line 318, ../sass/layouts/_company_detail.scss */
+.company-press-preview {
+  font-size: 14px;
+  color: white; }
+
+/* line 324, ../sass/layouts/_company_detail.scss */
+.company-investment-status-section {
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 0;
+  min-height: 68px; }
+
+/* line 332, ../sass/layouts/_company_detail.scss */
+.investment-summary-image {
+  display: inline-block;
+  width: 100%;
+  height: 400px;
+  border: 0 solid transparent;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  margin-left: 4px;
+  padding: 50%; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .investment-summary-image:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 339, ../sass/layouts/_company_detail.scss */
+.investment-summary-image.left {
+  background-position: left center; }
+
+/* line 343, ../sass/layouts/_company_detail.scss */
+.investment-summary-image.right {
+  background-position: right center; }
+
+/* line 347, ../sass/layouts/_company_detail.scss */
+.investment-status-button {
+  width: 100%;
+  height: 45px;
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 10px; }
+
+/* line 355, ../sass/layouts/_company_detail.scss */
+.investment-status-sc {
+  border-radius: 0;
+  outline: none;
+  background-color: #58595b;
+  color: white;
+  background-color: #262425; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-sc:hover {
+    background: #58595b;
+    color: white;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-sc:disabled {
+    cursor: default; }
+  /* line 358, ../sass/layouts/_company_detail.scss */
+  .investment-status-sc:hover {
+    background-color: #262425; }
+
+/* line 362, ../sass/layouts/_company_detail.scss */
+.investment-status-op {
+  border-radius: 0;
+  outline: none;
+  background-color: #58595b;
+  color: white;
+  background-color: #00953b; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-op:hover {
+    background: #58595b;
+    color: white;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-op:disabled {
+    cursor: default; }
+  /* line 365, ../sass/layouts/_company_detail.scss */
+  .investment-status-op:hover {
+    background-color: #00953b; }
+
+/* line 370, ../sass/layouts/_company_detail.scss */
+.investment-status-po {
+  border-radius: 0;
+  outline: none;
+  background-color: #58595b;
+  color: white; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-po:hover {
+    background: #58595b;
+    color: white;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-po:disabled {
+    cursor: default; }
+
+/* line 376, ../sass/layouts/_company_detail.scss */
+.investment-status-pr {
+  border-radius: 0;
+  outline: none;
+  background-color: #58595b;
+  color: white; }
+  /* line 13, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-pr:hover {
+    background: #58595b;
+    color: white;
+    cursor: default; }
+  /* line 19, ../sass/ui_patterns/_buttons.scss */
+  .investment-status-pr:disabled {
+    cursor: default; }
+
+/* line 379, ../sass/layouts/_company_detail.scss */
+.investment-inquire-button,
+.investment-interest-button {
+  display: inline-block;
+  width: 80%;
+  margin-left: 25px; }
+  /* line 386, ../sass/layouts/_company_detail.scss */
+  .investment-inquire-button:hover,
+  .investment-interest-button:hover {
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px; }
+  /* line 391, ../sass/layouts/_company_detail.scss */
+  .investment-inquire-button:active,
+  .investment-interest-button:active {
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px; }
+  /* line 396, ../sass/layouts/_company_detail.scss */
+  .investment-inquire-button:focus,
+  .investment-interest-button:focus {
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px; }
+
+/* line 402, ../sass/layouts/_company_detail.scss */
+.investment-follow-button {
+  margin-left: 25px;
+  display: inline-block;
+  background-color: #2e2c2d;
+  width: 80%;
+  text-transform: uppercase; }
+  /* line 411, ../sass/layouts/_company_detail.scss */
+  .investment-follow-button:hover {
+    background-color: #2e2c2d;
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px; }
+  /* line 417, ../sass/layouts/_company_detail.scss */
+  .investment-follow-button:active {
+    background-color: #2e2c2d;
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px; }
+  /* line 423, ../sass/layouts/_company_detail.scss */
+  .investment-follow-button:focus {
+    background-color: #2e2c2d;
+    display: inline-block;
+    width: 80%;
+    margin-left: 25px; }
+
+/* line 430, ../sass/layouts/_company_detail.scss */
+.invest-amount-toggle {
+  margin-right: 0.2em;
+  padding: 1em 2em;
+  width: 14em; }
+  /* line 47, ../sass/modules/_toggle.scss */
+  .invest-amount-toggle:hover {
+    padding: 1em 2em;
+    width: 14em; }
+  /* line 52, ../sass/modules/_toggle.scss */
+  .invest-amount-toggle:last-child {
+    margin-right: 0; }
+  /* line 432, ../sass/layouts/_company_detail.scss */
+  .invest-amount-toggle:nth-child(4n+2) {
+    margin-left: 6em; }
+  /* line 435, ../sass/layouts/_company_detail.scss */
+  .invest-amount-toggle:nth-child(4n+4) {
+    margin-right: 6em; }
+
+/* line 439, ../sass/layouts/_company_detail.scss */
+.invest-interest-form label.invest-contact-toggle {
+  margin-right: 0.2em;
+  padding: 1em 2em;
+  width: 12em; }
+  /* line 47, ../sass/modules/_toggle.scss */
+  .invest-interest-form label.invest-contact-toggle:hover {
+    padding: 1em 2em;
+    width: 12em; }
+  /* line 52, ../sass/modules/_toggle.scss */
+  .invest-interest-form label.invest-contact-toggle:last-child {
+    margin-right: 0; }
+  /* line 441, ../sass/layouts/_company_detail.scss */
+  .invest-interest-form label.invest-contact-toggle:after {
+    display: none; }
+
+/* line 445, ../sass/layouts/_company_detail.scss */
+.company-investment-summary-section {
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+/* line 452, ../sass/layouts/_company_detail.scss */
+.investment-content-title {
+  color: #58595b;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 500;
+  font-size: 10pt; }
+
+/* line 458, ../sass/layouts/_company_detail.scss */
+.company-current-investors-section {
+  margin-bottom: 10px;
+  margin-top: 0; }
+
+/* line 463, ../sass/layouts/_company_detail.scss */
+.company-investor {
+  position: relative;
+  z-index: 2; }
+
+/* line 467, ../sass/layouts/_company_detail.scss */
+.company-investor-tile {
+  display: inline-block; }
+  /* line 48, ../sass/modules/_tooltip.scss */
+  .company-investor-tile:hover + .investor-tooltip {
+    display: block; }
+
+/* line 470, ../sass/layouts/_company_detail.scss */
+.investor-tooltip {
+  word-wrap: break-word;
+  bottom: -5em;
+  color: #242223; }
+  /* line 475, ../sass/layouts/_company_detail.scss */
+  .investor-tooltip h5 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #242223; }
+  /* line 481, ../sass/layouts/_company_detail.scss */
+  .investor-tooltip p {
+    font-size: 12px;
+    font-weight: 100;
+    color: #242223; }
+  /* line 487, ../sass/layouts/_company_detail.scss */
+  .investor-tooltip:before {
+    bottom: 88px !important; }
+
+/* line 492, ../sass/layouts/_company_detail.scss */
+.tooltip-container {
+  float: right; }
+
+/* line 496, ../sass/layouts/_company_detail.scss */
+.company-investor-name {
+  text-transform: uppercase;
+  margin-left: 15px;
+  font-size: 10pt;
+  font-weight: 500; }
+
+/* line 503, ../sass/layouts/_company_detail.scss */
+.onboarding-modal, .invest-interest-modal, .invest-forward-modal, #MailingListForm {
+  display: block;
+  background-color: #262425;
+  float: none;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  display: none;
+  padding: 2em 3em 3em;
+  box-shadow: 0 0 1em black;
+  border-radius: 0; }
+
+/* line 516, ../sass/layouts/_company_detail.scss */
+.company-modal-title {
+  margin-bottom: 1.25em; }
+
+/* line 520, ../sass/layouts/_company_detail.scss */
+p.company-modal-description {
+  margin: 0px auto 2.5em auto;
+  width: 550px;
+  text-align: center;
+  line-height: 1.3; }
+
+/* line 526, ../sass/layouts/_company_detail.scss */
+.company-interest-amount {
+  margin: 2em auto 1em auto; }
+
+/* line 529, ../sass/layouts/_company_detail.scss */
+.company-amount-text {
+  margin-bottom: 1.25em; }
+
+/* line 534, ../sass/layouts/_company_detail.scss */
+.company-contact-text {
+  margin-bottom: 1.25em; }
+
+/* line 537, ../sass/layouts/_company_detail.scss */
+.invest-radio-contact {
+  margin-bottom: 3.75em; }
+
+/* line 540, ../sass/layouts/_company_detail.scss */
+.invest-step {
+  vertical-align: super;
+  color: #d7551a;
+  font-size: 2.5em; }
+
+/* line 546, ../sass/layouts/_company_detail.scss */
+.invest-step-text {
+  display: inline-block;
+  width: 50%;
+  height: auto;
+  border: 0 solid transparent;
+  background-color: transparent;
+  margin-top: 0.625em;
+  margin-left: 2em;
+  text-align: left; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .invest-step-text:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 552, ../sass/layouts/_company_detail.scss */
+p.invest-step-title {
+  font-weight: 700;
+  margin: 0; }
+
+/* line 557, ../sass/layouts/_company_detail.scss */
+p.invest-step-description {
+  color: #58595b; }
+
+/* line 561, ../sass/layouts/_company_detail.scss */
+p.invest-questions-text {
+  width: 70%;
+  margin: 3em auto 2em auto;
+  color: white; }
+
+/* line 566, ../sass/layouts/_company_detail.scss */
+.invest-questions-link {
+  cursor: pointer;
+  color: white;
+  font-size: 1em;
+  text-decoration: none;
+  text-decoration: underline; }
+  /* line 7, ../sass/ui_patterns/_links.scss */
+  .invest-questions-link:hover, .invest-questions-link:focus, .invest-questions-link:active {
+    cursor: pointer;
+    color: white;
+    font-size: 1em;
+    text-decoration: none; }
+
+/* line 579, ../sass/layouts/_company_detail.scss */
+.company-question-form-section {
+  position: relative; }
+
+/* line 590, ../sass/layouts/_company_detail.scss */
+.company-active-questions-section .company-question {
+  border-bottom: 1px grey solid;
+  -webkit-backface-visibility: hidden; }
+  /* line 593, ../sass/layouts/_company_detail.scss */
+  .company-active-questions-section .company-question .company-question-text {
+    margin-top: 10px; }
+    /* line 595, ../sass/layouts/_company_detail.scss */
+    .company-active-questions-section .company-question .company-question-text p {
+      color: #d7551a;
+      display: inline-block;
+      margin-left: 5px;
+      cursor: pointer; }
+  /* line 602, ../sass/layouts/_company_detail.scss */
+  .company-active-questions-section .company-question .arrow {
+    display: inline;
+    margin-right: 5px; }
+  /* line 606, ../sass/layouts/_company_detail.scss */
+  .company-active-questions-section .company-question .right {
+    transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg); }
+  /* line 611, ../sass/layouts/_company_detail.scss */
+  .company-active-questions-section .company-question .company-answer-text {
+    display: none;
+    margin-left: 22px;
+    font-size: .9em;
+    margin-bottom: 10px;
+    -webkit-backface-visibility: hidden; }
+
+/* line 620, ../sass/layouts/_company_detail.scss */
+.company-question-form {
+  padding-bottom: 2.5em; }
+
+/* line 623, ../sass/layouts/_company_detail.scss */
+.investment-question-button {
+  position: absolute;
+  right: 1.25em;
+  bottom: 1.25em; }
+
+/* line 629, ../sass/layouts/_company_detail.scss */
+.more-link {
+  cursor: pointer;
+  color: #58595b; }
+  /* line 632, ../sass/layouts/_company_detail.scss */
+  .more-link:hover {
+    color: white; }
+
+/* line 638, ../sass/layouts/_company_detail.scss */
+.company-page-dealroom p {
+  color: #e1e1e1; }
+/* line 642, ../sass/layouts/_company_detail.scss */
+.company-page-dealroom .coming-soon {
+  margin-top: 72px;
+  margin-left: 30%;
+  font-size: 20pt;
+  font-weight: 400; }
+
+/* line 650, ../sass/layouts/_company_detail.scss */
+.company-dealroom-documents-section {
+  text-transform: uppercase; }
+
+/* line 655, ../sass/layouts/_company_detail.scss */
+.company-document-title {
+  margin-bottom: 1.25em;
+  min-width: 107px;
+  color: #e1e1e1;
+  font-size: 0.95em; }
+
+/* line 663, ../sass/layouts/_company_detail.scss */
+.fullScreenButton {
+  background-image: url("../img/fullscreen.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  width: 15px;
+  height: 0;
+  padding-bottom: 15px;
+  border: 0 solid transparent;
+  background-color: transparent;
+  background-size: cover;
+  cursor: pointer; }
+
+/* line 672, ../sass/layouts/_company_detail.scss */
+.problem-solution-section ul, .content-richtext ul {
+  margin-left: 5px; }
+
+/* line 676, ../sass/layouts/_company_detail.scss */
+.close-modal img {
+  position: absolute;
+  right: 20px; }
+
+/* line 1, ../sass/layouts/_profile.scss */
+.update-user-form {
+  display: block;
+  background-color: transparent;
+  float: none;
+  margin: 0 auto;
+  color: white;
+  text-align: left;
+  padding-bottom: 6.25em; }
+  @media screen and (min-width: 13.75em) and (max-width: 60em) {
+    /* line 1, ../sass/layouts/_profile.scss */
+    .update-user-form {
+      float: left;
+      display: block;
+      margin-right: 7.42297%;
+      width: 100%;
+      margin-right: 0; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
+      .update-user-form:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 60em) {
+    /* line 1, ../sass/layouts/_profile.scss */
+    .update-user-form {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      /* line 38, ../sass/neat/grid/_span-columns.scss */
+      .update-user-form:last-child {
+        margin-right: 0; } }
+  /* line 15, ../sass/layouts/_profile.scss */
+  .update-user-form p, .update-user-form span {
+    font-size: 0.9em;
+    word-spacing: 0.1em;
+    color: #e1e1e1;
+    word-wrap: break-word;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 27, ../sass/layouts/_profile.scss */
+.profile-header {
+  max-width: 63.75em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .profile-header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 32, ../sass/layouts/_profile.scss */
+.profile-header-avatar {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .profile-header-avatar:last-child {
+    margin-right: 0; }
+
+/* line 36, ../sass/layouts/_profile.scss */
+.profile-image-link {
+  display: block;
+  color: #e1e1e1;
+  font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+  text-decoration: underline;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px; }
+
+/* line 46, ../sass/layouts/_profile.scss */
+.profile-header-info {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 57.35098%;
+  text-transform: uppercase;
+  .profile-company-font-size: 10pt;
+  .profile-company-margin: 3px 0px;
+  .profile-company-font-weight: 500;
+  .profile-company-padding-top: 5px; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .profile-header-info:last-child {
+    margin-right: 0; }
+  /* line 50, ../sass/layouts/_profile.scss */
+  .profile-header-info .profile-name {
+    font-size: 20pt;
+    margin-bottom: -7px;
+    font-weight: 500; }
+  /* line 63, ../sass/layouts/_profile.scss */
+  .profile-header-info .profile-header-location {
+    display: inline;
+    font-size: 10pt;
+    color: #58595b;
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+
+/* line 71, ../sass/layouts/_profile.scss */
+.profile-update-buttons {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 6.17215%;
+  margin-right: 0; }
+  /* line 38, ../sass/neat/grid/_span-columns.scss */
+  .profile-update-buttons:last-child {
+    margin-right: 0; }
+
+/* line 80, ../sass/layouts/_profile.scss */
+.save-profile-button {
+  padding: 0.65em 2.5em;
+  margin: 0; }
+  /* line 27, ../sass/ui_patterns/_buttons.scss */
+  .save-profile-button:hover, .save-profile-button:focus, .save-profile-button:visited, .save-profile-button:active, .save-profile-button:focus:hover, .save-profile-button[disabled=disabled], .save-profile-button[disabled=disabled]:hover {
+    padding: 0.65em 2.5em; }
+
+/* line 86, ../sass/layouts/_profile.scss */
+.profile-contact-container, .profile-visibility-container, .profile-social-container {
+  background-color: #262425;
+  margin-top: 1.25em;
+  padding: 1.25em; }
+
+/* line 94, ../sass/layouts/_profile.scss */
+.profile-contact-container .contact-field {
+  width: 100%; }
+/* line 97, ../sass/layouts/_profile.scss */
+.profile-contact-container label {
+  margin-top: 10px;
+  width: 20%; }
+/* line 102, ../sass/layouts/_profile.scss */
+.profile-contact-container input {
+  float: left;
+  width: 70%; }
+/* line 107, ../sass/layouts/_profile.scss */
+.profile-contact-container hr {
+  color: #3a3939; }
+
+/* line 114, ../sass/layouts/_profile.scss */
+.profile-visibility-container span {
+  width: 73%; }
+
+/* line 120, ../sass/layouts/_profile.scss */
+.profile-social-container {
+  height: 300px; }
+  /* line 123, ../sass/layouts/_profile.scss */
+  .profile-social-container .social-link-set {
+    margin-top: 0.625em;
+    float: left;
+    width: 100%; }
+  /* line 129, ../sass/layouts/_profile.scss */
+  .profile-social-container p {
+    margin-top: 10px; }
+
+/* line 134, ../sass/layouts/_profile.scss */
+.contact-field {
+  margin: 10px 0;
+  display: block; }
+  /* line 136, ../sass/layouts/_profile.scss */
+  .contact-field .public-visibility {
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .contact-field:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 140, ../sass/layouts/_profile.scss */
+  .contact-field .text-label, .contact-field #password-label {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 14.70196%;
+    color: #4f4d4e;
+    font-size: 11pt;
+    margin-right: 41px;
+    width: 20%; }
+    /* line 38, ../sass/neat/grid/_span-columns.scss */
+    .contact-field .text-label:last-child, .contact-field #password-label:last-child {
+      margin-right: 0; }
+
+/* line 148, ../sass/layouts/_profile.scss */
+.profile-section-title {
+  font-size: 12pt; }
+
+/* line 151, ../sass/layouts/_profile.scss */
+.padding30 {
+  margin-bottom: 30px; }
+
+/* line 154, ../sass/layouts/_profile.scss */
+#password-label {
+  display: inline-block;
+  float: none;
+  width: 20%;
+  margin-top: 10px;
+  margin-right: 42px;
+  color: #4f4d4e;
+  font-size: 11pt; }
+
+/* line 165, ../sass/layouts/_profile.scss */
+.contact-value {
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-top: 10px; }
+
+/* line 173, ../sass/layouts/_profile.scss */
+.change-password {
+  color: #ffffff;
+  width: 50px;
+  height: 20px;
+  background-color: #3c3a3b;
+  padding: 5px 20px 5px 20px; }
+
+/* line 182, ../sass/layouts/_profile.scss */
+.privacy-field {
+  display: table;
+  width: 100%;
+  table-layout: fixed; }
+  /* line 15, ../sass/bourbon/addons/_clearfix.scss */
+  .privacy-field:after {
+    content: "";
+    display: table;
+    clear: both; }
+  /* line 184, ../sass/layouts/_profile.scss */
+  .privacy-field span {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    width: 71%; }
+
+/* line 193, ../sass/layouts/_profile.scss */
+.privacy-toggle {
+  width: 60px;
+  height: 2em;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle; }
+  /* line 200, ../sass/layouts/_profile.scss */
+  .privacy-toggle.on {
+    background-color: #d7551a; }
+  /* line 203, ../sass/layouts/_profile.scss */
+  .privacy-toggle.off {
+    background-color: #3c3a3b;
+    color: #58595b; }
+
+/* line 210, ../sass/layouts/_profile.scss */
+.contact-input-container {
+  display: inline-block;
+  text-transform: uppercase;
+  float: right;
+  width: 200px;
+  display: table-cell;
+  width: 66.66667%; }
+  /* line 216, ../sass/layouts/_profile.scss */
+  .contact-input-container input:checked + label {
+    border: none; }
+
+/* line 222, ../sass/layouts/_profile.scss */
+.profile-btn {
+  color: white;
+  background-color: #3c3a3b;
+  padding: 8px 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: inline-block; }
+  /* line 226, ../sass/layouts/_profile.scss */
+  .profile-btn:hover {
+    color: white; }
+
+/* line 238, ../sass/layouts/_profile.scss */
+.profile-name-fields .text-label, .profile-name-fields #password-label {
+  margin-top: 12px;
+  width: 22%; }
+
+/* line 246, ../sass/layouts/_profile.scss */
+.profile-address-fields #password-label {
+  margin-right: 75px; }
+
+/* line 251, ../sass/layouts/_profile.scss */
+#avatar-input {
+  display: none; }
+
+/* line 256, ../sass/layouts/_profile.scss */
+.social-link-set .row {
+  position: relative;
+  margin-bottom: 25px; }
+/* line 261, ../sass/layouts/_profile.scss */
+.social-link-set .social-container {
+  display: inline-block;
+  cursor: auto;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  width: auto; }
+  /* line 268, ../sass/layouts/_profile.scss */
+  .social-link-set .social-container div:hover {
+    color: white !important;
+    cursor: auto; }
+  /* line 272, ../sass/layouts/_profile.scss */
+  .social-link-set .social-container div:hover div {
+    color: white !important;
+    cursor: auto; }
+  /* line 276, ../sass/layouts/_profile.scss */
+  .social-link-set .social-container .connect-facebook, .social-link-set .social-container .connect-linkedin {
+    padding: 5px;
+    padding-left: 8px; }
+/* line 281, ../sass/layouts/_profile.scss */
+.social-link-set .social-connection-status {
+  position: absolute;
+  background-color: #3C3A3B;
+  width: 150px;
+  display: inline-block;
+  width: 200px;
+  text-transform: uppercase;
+  color: #58595B;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  color: white;
+  font-size: 15px; }
+
+/* line 1, ../sass/layouts/_ui_kit.scss */
+.ui-kit-header {
+  display: block;
+  background-color: #f05352; }
+
+/* line 5, ../sass/layouts/_ui_kit.scss */
+.ui-kit-left {
+  display: table-cell;
+  width: 100%;
+  float: none; }
+
+/* line 10, ../sass/layouts/_ui_kit.scss */
+.ui-kit-right {
+  display: table-cell;
+  width: 100%;
+  float: none; }
+
+/* line 15, ../sass/layouts/_ui_kit.scss */
+.ui-kit-row {
+  overflow: auto;
+  padding: 1.25em 0; }
+
+/* line 20, ../sass/layouts/_ui_kit.scss */
+.ui-kit-title {
+  padding: 1.25em 0;
+  color: white; }
+
+/* line 26, ../sass/layouts/_ui_kit.scss */
+.ui-kit-section-title {
+  color: #58595b;
+  margin: 0.625em 0; }
+
+/* line 31, ../sass/layouts/_ui_kit.scss */
+.ui-kit-break {
+  height: 1em;
+  width: 1em; }
+
+/* line 36, ../sass/layouts/_ui_kit.scss */
+.ui-kit-break.horizontal {
+  display: block; }
+
+/* line 40, ../sass/layouts/_ui_kit.scss */
+.ui-kit-break.vertical {
+  display: inline-block; }
+
+/* line 44, ../sass/layouts/_ui_kit.scss */
+.ui-kit-buttons {
+  display: table-cell;
+  width: 16.66667%; }
+
+/* line 48, ../sass/layouts/_ui_kit.scss */
+.ui-kit-subnav {
+  display: table-cell;
+  width: 25%; }
+
+/* line 52, ../sass/layouts/_ui_kit.scss */
+.ui-button-column {
+  display: table-cell;
+  width: 50%;
+  position: relative;
+  float: none;
+  width: auto; }
+
+/* line 59, ../sass/layouts/_ui_kit.scss */
+.ui-kit-elements {
+  display: table-cell;
+  width: 58.33333%; }
+
+/* line 64, ../sass/layouts/_ui_kit.scss */
+.ui-checkbox-column {
+  display: table-cell;
+  width: 25%; }
+
+/* line 68, ../sass/layouts/_ui_kit.scss */
+.ui-tags-column {
+  display: table-cell;
+  width: 41.66667%; }
+
+/* line 72, ../sass/layouts/_ui_kit.scss */
+.ui-nav-column {
+  display: table-cell;
+  width: 33.33333%;
+  margin-right: 0; }
+
+/* line 78, ../sass/layouts/_ui_kit.scss */
+.ui-toggle-column {
+  display: table-cell;
+  width: 100%; }
+
+/* line 82, ../sass/layouts/_ui_kit.scss */
+.ui-comment-box {
+  display: block;
+  width: 26.5em; }
+
+/* line 3, ../sass/layouts/_error_pages.scss */
+.error-page {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 350px; }
+  /* line 7, ../sass/layouts/_error_pages.scss */
+  .error-page h5 {
+    color: #e1e1e1;
+    text-align: center;
+    margin-bottom: 5px; }
+  /* line 13, ../sass/layouts/_error_pages.scss */
+  .error-page img {
+    margin-bottom: 20px; }
+  /* line 16, ../sass/layouts/_error_pages.scss */
+  .error-page a {
+    text-decoration: underline;
+    color: #e1e1e1; }
+    /* line 19, ../sass/layouts/_error_pages.scss */
+    .error-page a:hover {
+      color: #e1e1e1; }
+
+/* line 1, ../sass/layouts/_static_pages.scss */
+.static-page {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 100px;
+  color: white; }
+  /* line 7, ../sass/layouts/_static_pages.scss */
+  .static-page h3 {
+    margin-bottom: 50px;
+    text-align: center; }
+  /* line 12, ../sass/layouts/_static_pages.scss */
+  .static-page img {
+    margin-bottom: 20px; }
+  /* line 15, ../sass/layouts/_static_pages.scss */
+  .static-page a {
+    text-decoration: underline;
+    color: #e1e1e1; }
+    /* line 18, ../sass/layouts/_static_pages.scss */
+    .static-page a:hover {
+      color: #e1e1e1; }
+  /* line 23, ../sass/layouts/_static_pages.scss */
+  .static-page p {
+    font-family: "HelveticaNeueLTStd-Md", Helvetica, Roboto, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    color: #e1e1e1; }
+  /* line 30, ../sass/layouts/_static_pages.scss */
+  .static-page h5 {
+    margin-top: 20px;
+    margin-bottom: 5px; }
+
+@media screen and (min-width: 13.75em) and (max-width: 60em) {
+  /* line 38, ../sass/layouts/_static_pages.scss */
+  #show-mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 300; }
+    /* line 47, ../sass/layouts/_static_pages.scss */
+    #show-mobile .error-page {
+      padding-top: 0px !important;
+      margin-top: 70px; } }
+@media screen and (min-width: 720px) {
+  /* line 55, ../sass/layouts/_static_pages.scss */
+  #show-mobile {
+    display: none; } }
+@media screen and (min-width: 60em) {
+  /* line 61, ../sass/layouts/_static_pages.scss */
+  #show-mobile {
+    display: none; } }
+/* line 1, ../sass/layouts/news.scss */
+.news-content-wrapper {
+  padding-top: 60px; }
+
+/* line 4, ../sass/layouts/news.scss */
+.news-screen, #MailingListForm, .news-thank-you, .form-wrapper {
+  max-width: 600px;
+  min-width: 360px;
+  min-height: 440px; }
+
+/* line 9, ../sass/layouts/news.scss */
+#MailingListForm {
+  transform: translate3d(0, 0, 0);
+  top: 35% !important;
+  overflow: hidden;
+  padding: 0px !important;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border-top: 2px solid #d7551a;
+  width: 50%;
+  z-index: 99; }
+  /* line 20, ../sass/layouts/news.scss */
+  #MailingListForm .auth-field {
+    width: 300px;
+    margin: 0px auto 20px; }
+    /* line 23, ../sass/layouts/news.scss */
+    #MailingListForm .auth-field label {
+      margin-bottom: 0px !important; }
+
+/* line 29, ../sass/layouts/news.scss */
+.news-logo {
+  margin: 0 auto 10px;
+  display: block;
+  width: 159px; }
+
+/* line 34, ../sass/layouts/news.scss */
+.news-subtitle {
+  font-size: 15pt;
+  font-weight: 500;
+  margin-top: 28px !important;
+  margin-bottom: 16px !important; }
+
+/* line 40, ../sass/layouts/news.scss */
+.news-hr {
+  width: 300px;
+  table: cell;
+  margin-top: 8px; }
+
+/* line 45, ../sass/layouts/news.scss */
+.news-body {
+  margin-top: 16px;
+  color: #afafaf !important; }
+  /* line 47, ../sass/layouts/news.scss */
+  .news-body:first-of-type {
+    margin-top: 32px; }
+  /* line 50, ../sass/layouts/news.scss */
+  .news-body:last-of-type {
+    margin-bottom: 46px !important; }
+
+/* line 55, ../sass/layouts/news.scss */
+.news-body-emphasis {
+  margin-top: 32px;
+  color: white; }
+
+/* line 60, ../sass/layouts/news.scss */
+.news-input-field {
+  display: cell;
+  width: 220px !important;
+  padding: 0px 0px !important;
+  margin: 0px 5px !important;
+  color: #929292;
+  border-bottom: transparent !important; }
+
+/* line 69, ../sass/layouts/news.scss */
+.news-button {
+  margin-bottom: 40px !important;
+  margin-top: 10px;
+  width: 300px; }
+
+/* line 74, ../sass/layouts/news.scss */
+.news-read-button {
+  margin-top: 108px;
+  width: 300px;
+  background-color: black; }
+  /* line 78, ../sass/layouts/news.scss */
+  .news-read-button:hover {
+    background-color: rgba(0, 0, 0, 0.5); }
+  /* line 81, ../sass/layouts/news.scss */
+  .news-read-button:active {
+    background-color: black; }
+
+/* line 85, ../sass/layouts/news.scss */
+.news-finish-button {
+  width: 300px; }
+
+/* line 88, ../sass/layouts/news.scss */
+.news-auth {
+  border-bottom: 0.1em solid #58595b !important; }
+
+/* line 91, ../sass/layouts/news.scss */
+#subscribe {
+  transition: all 2s;
+  transform: translate3d(0, 0, 0);
+  display: inline-block !important;
+  max-width: 600px;
+  min-width: 360px;
+  width: 50%;
+  height: 440px; }
+
+/* line 100, ../sass/layouts/news.scss */
+.news-thank-you {
+  transform: translate3d(-600px, 0, 0);
+  vertical-align: top;
+  width: 50%;
+  display: inline-block; }
+
+/* line 107, ../sass/layouts/news.scss */
+.form-wrapper {
+  display: inline-block;
+  width: 50%;
+  align: top; }
+
+/* line 113, ../sass/layouts/news.scss */
+.screen-wrapper {
+  max-width: 1200px;
+  min-width: 720px;
+  width: 200%;
+  heigth: 440px;
+  transition: transform 2s; }
+
+/* line 121, ../sass/layouts/news.scss */
+.first-screen {
+  transform: translate3d(0px, 0px, 0px); }
+
+/* line 124, ../sass/layouts/news.scss */
+.second-screen {
+  transfrom: translate3d(-600px, 0px, 0px); }
