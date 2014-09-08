@@ -78,13 +78,14 @@ margin: 15px auto;
 	background-color:yellow;
 }
 .media-wrapper{
-	display: flex;
+	width:100%;
 	margin:0px auto;
 	color: white;
 	justify-content:center;
 }
 .media-items{
-	display:table-column;
+	width:342px;
+	margin:0px auto;
 }
 .media-item{
 	bord/er-top:1px solid rgba(255,255,255,.2);
