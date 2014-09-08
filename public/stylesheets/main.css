@@ -64,7 +64,6 @@ width:240px;
 	background-color: blue;
 }
 .third{
-
 background-size:contain;
 background-repeat: no-repeat;
 background-color: #020D0C;
@@ -144,6 +143,9 @@ background-repeat: no-repeat;
 	box-sizing:border-box;
 		padding:5px;
 		padding-top:0px;
+}
+.media-item:last-of-type{
+	margin-bottom: 60px;
 }
 .Title{
 	text-align:center;

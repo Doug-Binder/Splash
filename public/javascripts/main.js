@@ -29,7 +29,6 @@ function ChangeState(e){
         	DisplayThird(e);
         }
     }
-
 left = 37
 
 right = 39
@@ -69,6 +68,7 @@ function mouseupMediaItem(ev){
 }
 
 function init(){
+      if(window.innerWidth >= 800 && window.innerHeight >= 600) {//sloppy remove functionality for mobile hack
 wrapper = document.getElementById("scroll-wrapper");
 document.getElementById('do-olaf').addEventListener('click', DisplayFirst, false);
 document.getElementById('do-full-stack').addEventListener('click', DisplaySecond, false);
@@ -81,5 +81,6 @@ var x = document.getElementsByClassName('media-about');
         x[i].addEventListener('mouseout', mouseoutMediaItem, false);
         x[i].addEventListener('mousedown', mousedownMediaItem, false);
         x[i].addEventListener('mouseup', mouseupMediaItem, false);
+        }
     }
 }
