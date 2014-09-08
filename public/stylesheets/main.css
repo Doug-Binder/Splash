@@ -1,3 +1,8 @@
+
+@media(max-width: 600px){
+
+}
+
 body{
 background-color:#020D0C;
 font-size:12pt;
@@ -10,6 +15,7 @@ cursor: default;
 ul{
 	color: #FF6c26;
 }
+
 .center-piece{
 	margin:60px auto;
 	height:240px;
@@ -24,7 +30,7 @@ ul{
 display:inline-block;
 height:240px;
 width:240px;
-	border-radius:50%;
+border-radius:50%;
 transform: translate3d(0,0,0);
 background-image:url("/images/good4.png");
 background-size:contain;
@@ -42,18 +48,16 @@ background-color: white;
 	transform: translate3d(0,0,0);
 	 will-change: transform;
 	 -webkit-transition: transform .8s ease-in-out;
+	 transition: transform .8s ease-in-out;
 	 z-index:2;
 	 display:inline-block;
 }
 .first{
-
-}
-
-.portrait{
 background-color: #FF6C26;
-height:301px;
+height:240px;
 width:240px;
 }
+
 .second{
 	background-color: blue;
 }
@@ -73,6 +77,7 @@ width:225px;
 display:table;
 margin: 15px auto;
 -webkit-filter: invert(100%);
+filter: invesrt(100%);
 }
 .fourth{
 	background-color:yellow;
@@ -88,59 +93,24 @@ margin: 15px auto;
 	margin:0px auto;
 }
 .media-item{
-	bord/er-top:1px solid rgba(255,255,255,.2);
-	bor/der-left:1px solid rgba(255,255,255,.2);
-	bord/er-right:1px solid rgba(255,255,255,.2);
+
 	border-bottom:1px solid rgba(255,255,255,.2);
 	padding:5px;
-	width:340px;
+	width:100%;
 	box-sizing:border-box;
 	margin-bottom: 3px;
 }
 .media-item:last-of-type{
 		border-bottom:0px solid rgba(255,255,255,.2);
 }
-#do-myself{
-backgrou//nd-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/67376-42.png?Expires=1409766723&Signature=gE9Ysn5Q5RSzBtH~tSVywerLZ1SZ-usLuxaz4DudXBuaCaW-P8VO~sZC5JQpNPSaWGAahKA8wu64GjTKXfQnfCus8zySkPEA0t6uiOnFzVz-OiUIktn6cGCyyiN-TFo5dwuu59ACUO7XdwgbACVGVxpaTzQb~NAEKxl5i-Yqc2U_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q");
-background-size:contain;
-background-repeat: no-repeat;
--webkit-fi/lter: invert(100%);
-	background-image: url("/images/icons/ftc.png");
-}
-#do-full-stack .media-icon{
-backgrou//nd-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/67376-42.png?Expires=1409766723&Signature=gE9Ysn5Q5RSzBtH~tSVywerLZ1SZ-usLuxaz4DudXBuaCaW-P8VO~sZC5JQpNPSaWGAahKA8wu64GjTKXfQnfCus8zySkPEA0t6uiOnFzVz-OiUIktn6cGCyyiN-TFo5dwuu59ACUO7XdwgbACVGVxpaTzQb~NAEKxl5i-Yqc2U_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q");
-background-size:contain;
-background-repeat: no-repeat;
--webkit-fi/lter: invert(100%);
-	background-image: url("/images/icons/ftc.png");
-}
-#do-olaf .media-icon{
-backgrou/nd-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/63341-42.png?Expires=1409755734&Signature=KSURpXuEnXcCNSBIbrGcjzd6ZHfHLHXrPP7vnG6ZUYFt9Jnk8b~QYQ0TNzSPtDHfUudpYshmaiPQVceDmclQrSqjRQsNlsdBoTbpw59FLTxdI6iZCP9veg0XT46OCW1epCRgMFkXLvqgaYthwXgqgU9AglQycO0to2XjGthRuyE_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q");
-background-size:contain;
-background-repeat: no-repeat;
-background-image: url("/images/icons/ftc.png");
--we/bkit-filter: invert(100%);
-}
-#do-nyc .media-icon{
-backg/round-image: url("https://d30y9cdsu7xlg0.cloudfront.net/png/54971-42.png?Expires=1409757039&Signature=kwP--KMpMFCzQkYTmYUgkHm-QIQ~Bk5VexYk6DTEw-u7SVPlvy7VmebH~pe8WGoLDCHpIl7R-uALECKu8InAGSPWORYbPiANboPA0X4qIbjyflpMWigZx4ylC2EaFLzqlP~nT8aTfBQwxp93NzsClUbq277Mm5Uo5D55lLjjQ7U_&Key-Pair-Id=APKAI5ZVHAXN65CHVU2Q");
-	background-image: url("/images/icons/ftc.png");
-background-size:contain;
-background-repeat: no-repeat;
--webk/it-filter: invert(100%);
-}
-
-#do-job .media-icon{
-	background-image: url("/images/icons/ftc.png");
-	background-size:contain;
-	background-repeat: no-repeat;
-}
-
-
 .media-icon{
-width:36px;
-height:36px;
+width:10%;
+height:10%;
 margin-right:5px;
 display:inline-block;
+	background-size:contain;
+background-repeat: no-repeat;
+	background-image: url("/images/icons/ftc.png");
 }
 
 .media-about{
@@ -166,25 +136,13 @@ display:inline-block;
 .media-about-sub:hover{
 	border-bottom: 1px solid #FF6C26;
 }
-
-
-.text-items{
-		display:table-column;
-		min-width:340px;
-
-
-}
 .text-item{
 
 	width:340px;
 	box-sizing:border-box;
-	mi/n-height:200px;
-	bor/der-right:1px solid rgba(255,255,255,.2);
-	bor/der-bottom:1px solid rgba(255,255,255,.2);
 		padding:5px;
 		padding-top:0px;
 }
-
 .Title{
 	text-align:center;
 	font-size:36pt;
