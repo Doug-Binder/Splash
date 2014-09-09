@@ -72,7 +72,7 @@ width:225px;
 display:table;
 margin: 15px auto;
 -webkit-filter: invert(100%);
-filter: invesrt(100%);
+filter: invert(100%);
 }
 .fourth{
 	background-color:yellow;
@@ -99,13 +99,17 @@ filter: invesrt(100%);
 		border-bottom:0px solid rgba(255,255,255,.2);
 }
 .media-icon{
-width:36px;
-height:36px;
-margin-right:5px;
+width:24px;
+height:24px;
+margin:5px 5px 0px;
 display:inline-block;
-	background-size:contain;
+background-size:contain;
 background-repeat: no-repeat;
-	background-image: url("/images/icons/ftc.png");
+background-image: url("/images/bullet.svg");
+-webkit-filter: invert(100%);
+filter: invert(100%);
+-webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
 }
 
 .media-about{
