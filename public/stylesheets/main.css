@@ -12,8 +12,15 @@ cursor: default;
 ul{
 	color: #FF6c26;
 }
+hr{
+
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+	color:rgba(255,255,255,.2);;
+}
 .center-piece{
-	margin:60px auto;
+	margin:40px auto;
 	height:240px;
 	width:240px;
 	border-radius:50%;
@@ -65,17 +72,17 @@ overflow:hidden;
 }
 .empire-state{
 	background-image:url("/images/icons/Empire-State.png");
-background-size:contain;
-background-repeat: no-repeat;
-height:225px;
-width:225px;
-display:table;
-margin: 15px auto;
--webkit-filter: invert(100%);
-filter: invert(100%);
+	background-size:contain;
+	background-repeat: no-repeat;
+	height:225px;
+	width:225px;
+	display:table;
+	margin: 15px auto;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
 }
 .fourth{
-	background-color:yellow;
+	background-color: yellow;
 }
 .media-wrapper{
 	width:100%;
@@ -83,34 +90,40 @@ filter: invert(100%);
 	color: white;
 	justify-content:center;
 }
+.nav{
+background-color: #5B9CBD;
+backgr/ound-color: #9CD4C2;
+width: 100%;
+height: 45px;
+margin-bottom: 40px;
+}
+.tab{
+	width:50%;
+	text-align: center;
+	line-height: 45px;
+	display:inline-block;
+	font-weight: 600;
+	box-sizing: border-box;
+}
+.tab:first-of-type{
+	border-right: 1px solid white;
+}
 .media-items{
 	width:342px;
 	margin:0px auto;
+	padding: 0px 5px;
 }
-.media-item{
 
-	border-bottom:1px solid rgba(255,255,255,.2);
-	padding:5px;
+.media-item{
+	bord/er-bottom:1px solid rgba(255,255,255,.2);
+	padding:0px 5px;
 	width:100%;
 	box-sizing:border-box;
-	margin-bottom: 3px;
 }
 .media-item:last-of-type{
 		border-bottom:0px solid rgba(255,255,255,.2);
 }
-.media-icon{
-width:24px;
-height:24px;
-margin:5px 5px 0px;
-display:inline-block;
-background-size:contain;
-background-repeat: no-repeat;
-background-image: url("/images/bullet.svg");
--webkit-filter: invert(100%);
-filter: invert(100%);
--webkit-transform:rotate(-90deg);
-    -moz-transform:rotate(-90deg);
-}
+
 
 .media-about{
 	display:inline-block;
@@ -118,6 +131,7 @@ filter: invert(100%);
 	line-height: 20px;
 	font-size:12pt;
 	height:20px;
+	margin-bottom: 15px;
 	cursor: pointer;
 }
 .media-about-sub{
@@ -128,6 +142,7 @@ filter: invert(100%);
 	color:rgba(255,255,255,.5);
 	cursor: pointer;
 	padding-bottom: 2px;
+	margin-bottom: 5px;
 }
 .media-about-sub:active{
 	border-bottom: 1px solid #CC561E !important;
@@ -139,8 +154,7 @@ filter: invert(100%);
 
 	width:340px;
 	box-sizing:border-box;
-		padding:5px;
-		padding-top:0px;
+
 }
 .media-item:last-of-type{
 	margin-bottom: 60px;
