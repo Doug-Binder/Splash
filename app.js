@@ -9,6 +9,17 @@ var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 
+var mongoose = require("mongoose")
+
+
+var uristring =
+	process.env.MONGOLAB_URI ||
+	process.env.MONGOHQ_URL ||
+	'mongodb://localhost/MyDatabase';;
+
+mongoose.connect(uristring)
+
+
 var app = express();
 
 // all environments
@@ -24,12 +35,31 @@ app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
+
+var db = mongoose.connection;
+var Article = require('./models/article').Article
+
+
+db.on('error', function (err) {
+console.log('connection error', err);
+});
+db.once('open', function () {
+console.log('connected.');
+});
+
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', function(req, res){
+	Article.find(function(err, articles){
+  res.render('index', { title: 'Doug Binder', ARTS: articles});
+})
+});
 app.get('/users', user.list);
+app.get('/articles', function(req, res){
+res.render('layout', { title: 'Hey'})
+})
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

@@ -2,7 +2,9 @@
 /*
  * GET home page.
  */
-
+var Article = require('../models/article')
 exports.index = function(req, res){
-  res.render('index', { title: 'Express' });
+	Article.find(function(err, articles){
+  res.render('index', { title: 'Doug Binder', ARTS: articles});
+})
 };
