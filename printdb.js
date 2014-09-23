@@ -34,4 +34,4 @@ Article.find(function(err, objs){
 	}
 db.close()
 })
-}
+}.
